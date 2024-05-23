@@ -167,33 +167,65 @@ export default function page() {
         <h1 className="text-2xl">We are here to help you get started</h1>
 
         <form className="">
-          <input type="checkbox" />
-          <label> Soil Resistively</label> <br />
-          <input type="checkbox" />
-          <label> Soil Resistively</label> <br />
-          <input type="checkbox" />
-          <label> Soil Resistively</label> <br />
-          <input type="checkbox" />
-          <label> Soil Resistively</label> <br />
-          <input type="checkbox" />
-          <label> Soil Resistively</label> <br />
-          <input type="checkbox" />
-          <label> Soil Resistively</label> <br />
-
-          <label>Full Name</label> <br />
-          <input type="text" placeholder="eg: Nikhil" className="px-4 py-1 border border-solid border-gray-300 rounded-md" /><br />
-          <label>Email Id</label> <br />
-          <input type="email" placeholder="eg: nikhil@gmail.com" className="px-4 py-1 border border-solid border-gray-300 rounded-md" /><br />
-          <label>Country</label> <br />
-          <input type="" placeholder="eg: nikhil@gmail.com" className="px-4 py-1 border border-solid border-gray-300 rounded-md" /><br />
-          <label>Phone Number</label> <br />
-          <input type="number" placeholder="eg: nikhil@gmail.com" className="px-4 py-1 border border-solid border-gray-300 rounded-md" /><br />
-
-          <label>Requirement</label> <br />
-          <textarea placeholder="Write your requirements" className="px-4 py-1 border border-solid border-gray-300 rounded-md" />
-
+          <div className="flex flex-wrap mb-4">
+            <input type="checkbox" className="mr-4" />
+            <label htmlFor="soilResistivity" className="label">Soil Resistively</label>
+          </div>
+          <div className="flex flex-wrap mb-4">
+            <input type="checkbox" className="mr-4" />
+            <label htmlFor="soilResistivity" className="label">Soil Resistively</label>
+          </div>
+          <div className="flex flex-wrap mb-4">
+            <input type="checkbox" className="mr-4" />
+            <label htmlFor="soilResistivity" className="label">Soil Resistively</label>
+          </div>
+          <div className="flex flex-wrap mb-4">
+            <input type="checkbox" className="mr-4" />
+            <label htmlFor="soilResistivity" className="label">Soil Resistively</label>
+          </div>
+          <div className="flex flex-wrap mb-4">
+            <input type="checkbox" className="mr-4" />
+            <label htmlFor="soilResistivity" className="label">Soil Resistively</label>
+          </div>
+          <div className="flex flex-wrap mb-4">
+            <input type="checkbox" className="mr-4" />
+            <label htmlFor="soilResistivity" className="label">Soil Resistively</label>
+          </div>
+          <label htmlFor="fullName" className="label">Full Name</label>
+          <input
+            id="fullName"
+            type="text"
+            placeholder="eg: Nikhil"
+            className="px-4 py-1 border border-solid border-gray-300 rounded-md"
+          />
+          <label htmlFor="emailId" className="label">Email Id</label>
+          <input
+            id="emailId"
+            type="email"
+            placeholder="eg: nikhil@gmail.com"
+            className="px-4 py-1 border border-solid border-gray-300 rounded-md"
+          />
+          <label htmlFor="country" className="label">Country</label>
+          <input
+            id="country"
+            type="text"
+            placeholder="eg: nikhil@gmail.com"
+            className="px-4 py-1 border border-solid border-gray-300 rounded-md"
+          />
+          <label htmlFor="phoneNumber" className="label">Phone Number</label>
+          <input
+            id="phoneNumber"
+            type="number"
+            placeholder="eg: nikhil@gmail.com"
+            className="px-4 py-1 border border-solid border-gray-300 rounded-md"
+          />
+          <label htmlFor="requirement" className="label">Requirement</label>
+          <textarea
+            id="requirement"
+            placeholder="Write your requirements"
+            className="px-4 py-1 border border-solid border-gray-300 rounded-md"
+          />
         </form>
-
 
       </section>
 
