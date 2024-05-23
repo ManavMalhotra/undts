@@ -17,7 +17,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="flex justify-between space-x-8 mx-8 md:mx-16 my-8">
