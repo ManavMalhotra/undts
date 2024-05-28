@@ -30,32 +30,35 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/services">
-              <Dropdown
+              Services
+              {/* <Dropdown
                 title="Services"
                 list={["Service1", "Service1", "Service1"]}
-              />
+              /> */}
             </Link>
           </li>
           <li>
             <Link href="/projects">
-              <Dropdown
+              {/* <Dropdown
                 title="Projects"
                 list={["Projects1", "Projects1", "Projects1"]}
-              />
+              /> */}
+              Projects
             </Link>
           </li>
           <li>
             <Link href="/about-us">
-              <Dropdown
+              About us
+              {/* <Dropdown
                 title="About Us"
                 list={["About Us1", "About Us2", "About Us3"]}
-              />
+              /> */}
             </Link>
           </li>
+          <li>
+            Contact us
+          </li>
         </ul>
-        <div>
-          <button>Contact us</button>
-        </div>
       </div>
 
       {/* Mobile Menu Button  */}

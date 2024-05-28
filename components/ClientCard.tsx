@@ -12,7 +12,7 @@ const ClientCard = ({
 }: ClientCardProps
 ) => {
     return (
-        <div className="flex flex-col px-4 py-8 bg-pink-200 gap-4 rounded-lg">
+        <div className="flex flex-col px-4 py-8 bg-pink-50 gap-4 rounded-2xl max-w-[600px] mx-4">
             <div className="flex justify-between">
                 <div className="w-12 h-12 bg-gray-700 rounded-full"></div>
                 <div>
