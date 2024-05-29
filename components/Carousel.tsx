@@ -1,5 +1,6 @@
 "use client"
 // import the hook and options type
+// @ts-ignore
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import React from "react";
 import { PropsWithChildren, useEffect, useState } from "react";
@@ -45,6 +46,7 @@ const Carousel = ({ children, ...options }: Props) => {
                 canScrollPrev={canScrollPrev}
                 onNext={() => emblaApi?.scrollNext()}
                 onPrev={() => emblaApi?.scrollPrev()}
+                // @ts-ignore
                 options={options}
                 setSelectedIndex
                 className="z-10"

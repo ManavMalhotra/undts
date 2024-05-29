@@ -1,19 +1,11 @@
 import Carousel from "@/components/Carousel";
 import ClientCard from "@/components/ClientCard";
-import EmblaCarousel from "@/components/EmblaCarousel";
-import MainCarousel from "@/components/MainCarousel";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import { useState } from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { IoMdAlarm } from "react-icons/io";
-import { IoDiamondOutline, IoHelpBuoyOutline } from "react-icons/io5";
-import { MdArrowLeft, MdArrowRight, MdSafetyCheck } from "react-icons/md";
-import { PiDropBold } from "react-icons/pi";
 import project1 from "@/app/Imageproject1.png"
 import Reliable from "@/components/Reliable";
 import Esteemed from "@/components/Esteemed";
-import OurServices from "@/components/ourServices";
+import OurServices from "@/components/OurServices";
 import Statistics from "@/components/Statistics";
 import ReliableCompany from "@/components/ReliableCompany";
 import Form from "@/components/Form";
@@ -22,9 +14,7 @@ import NavigationMenuDemo from "@/components/NavigationMenuDemo";
 
 export default function page() {
 
-
   const images = [project1, project1, project1, project1];
-
 
   return (
     <>
