@@ -1,4 +1,5 @@
-import Carousel from "@/components/Carousel";
+"use client"
+
 import ClientCard from "@/components/ClientCard";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -10,6 +11,11 @@ import Statistics from "@/components/Statistics";
 import ReliableCompany from "@/components/ReliableCompany";
 import Form from "@/components/Form";
 import NavigationMenuDemo from "@/components/NavigationMenuDemo";
+
+import Carousel from 'react-multi-carousel'
+import "react-multi-carousel/lib/styles.css";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { FaCircleArrowRight } from "react-icons/fa6";
 
 
 export default function page() {
@@ -29,23 +35,85 @@ export default function page() {
           India's most reliable corrosion prevention service company
         </h1>
       </main>
+      <section className="flex flex-col items-center text-left  ">
+        <h1 className="text-2xl md:text-4xl" >What do our client have to say ?</h1>
 
-      <Carousel loop>
-        {images.map((src, i) => {
-          return (
-            // 👇 style each individual slide.
-            // relative - needed since we use the fill prop from next/image component
-            // h-64 - arbitrary height
-            // flex[0_0_100%]
-            //   - shorthand for flex-grow:0; flex-shrink:0; flex-basis:100%
-            //   - we want this slide to not be able to grow or shrink and take up 100% width of the viewport.
-            <div className="relative max-h-full h-[40vw] w-full flex-[0_0_100%]" key={i}>
-              {/* use object-cover + fill since we don't know the height and width of the parent */}
-              <Image src={src} fill className="object-fill" alt="alt" />
+        <p className='pt-4'>We prioritise safety across all our services</p>
+      </section>
+
+      <Carousel
+        additionalTransfrom={0}
+        arrows
+        autoPlaySpeed={3000}
+        centerMode={false}
+        className=""
+        containerClass="container"
+        dotListClass=""
+        draggable
+        focusOnSelect={false}
+        infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        pauseOnHover
+        renderArrowsWhenDisabled={false}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={{
+          desktop: {
+            breakpoint: {
+              max: 3000,
+              min: 1024
+            },
+            items: 1
+          },
+          mobile: {
+            breakpoint: {
+              max: 464,
+              min: 0
+            },
+            items: 1
+          },
+          tablet: {
+            breakpoint: {
+              max: 1024,
+              min: 464
+            },
+            items: 1
+          }
+        }}
+        rewind={false}
+        rewindWithAnimation={false}
+        rtl={false}
+        shouldResetAutoplay
+        showDots
+        sliderClass=""
+        slidesToSlide={1}
+        swipeable
+      >
+
+        <div>
+          <Image src={project1} alt="project1" className="mx-4" />
+
+          <section className=" max-w-[400px] w-[400px] absolute top-[6%] left-[6%] rounded-xl justify-between bg-slate-400 px-4 py-4">
+            <div className=" flex justify-between">
+              <h1 className="text-4xl">Project Name</h1>
+              <FaCircleArrowRight className="h-8" />
             </div>
-          );
-        })}
+            <p className="text-base mt-2">
+              We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.
+            </p>
+
+          </section>
+
+        </div>
+
+        <Image src={project1} alt="project1" className="mx-4" />
+        <Image src={project1} alt="project1" className="mx-4" />
+        <Image src={project1} alt="project1" className="mx-4" />
+
       </Carousel>
+
 
       {/* Reliable Section  */}
       <Reliable />
@@ -67,4 +135,5 @@ export default function page() {
 
     </>
   );
+
 }
