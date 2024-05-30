@@ -8,7 +8,11 @@ import "react-multi-carousel/lib/styles.css";
 function ReliableCompany() {
     return (
         <section className="col-span-4 md:col-span-8 py-8">
+            <section className="flex flex-col items-center text-left  ">
+                <h1 className="text-2xl md:text-4xl" >What do our client have to say ?</h1>
 
+                <p className='pt-4'>We prioritise safety across all our services</p>
+            </section>
             <Carousel
                 additionalTransfrom={0}
                 arrows
@@ -62,16 +66,6 @@ function ReliableCompany() {
                 slidesToSlide={1}
                 swipeable
             >
-                <>
-                    <section className="flex flex-col items-center text-left  ">
-                        <h1 className="text-2xl md:text-4xl" >What do our client have to say ?</h1>
-
-                        <p className='pt-4'>We prioritise safety across all our services</p>
-                    </section>
-                </>
-
-
-
                 <ClientCard name={"Shrikant Madhav Vaidya"} designation={"CEO"} company={"Indian Oil"} />
                 <ClientCard name={"Shrikant Madhav Vaidya"} designation={"CEO"} company={"Indian Oil"} />
                 <ClientCard name={"Shrikant Madhav Vaidya"} designation={"CEO"} company={"Indian Oil"} />

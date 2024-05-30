@@ -10,6 +10,7 @@ import Statistics from "@/components/Statistics";
 import ReliableCompany from "@/components/ReliableCompany";
 import Form from "@/components/Form";
 import NavigationMenuDemo from "@/components/NavigationMenuDemo";
+import Footer from "@/components/Footer";
 
 
 
@@ -23,19 +24,22 @@ export default function page() {
       <main className="grid grid-cols-4 gap-4 mx-4 md:grid-cols-8 md:mx-16">
         <Navbar />
         {/* Reliable Section */}
-        {/* <Reliable /> */}
+        <Reliable />
         {/* Our Esteemed Clients */}
-        {/* <Esteemed /> */}
+        <Esteemed />
         {/* Our Services */}
-        {/* <OurServices /> */}
+        <OurServices />
         {/* Statistics */}
         <Statistics />
         {/* Reliable Company */}
         {/* <ReliableCompany /> */}
         {/* Help you get started */}
-        {/* <Form /> */}
+        {/* <Form /> 
+        */}
+
 
       </main>
+        <Footer />
     </>
   );
 
