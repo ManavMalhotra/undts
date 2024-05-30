@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -15,55 +14,92 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between space-x-8 mx-8 md:mx-16 my-8">
-      <div>Logo</div>
+    <header className="col-span-4 md:col-span-8 flex justify-between my-8 items-center">
+      {/* logo  */}
+      <Image
+        src={logo}
+        alt="undts logo"
+        className="w-24"
+        priority={true}
+        width={80}
+        height={40}
+      />
+      <div className="gap-8 hidden md:flex">
 
-      <div className="hidden md:flex gap-16">
-        <ul className="flex gap-4">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/services">
-              Services
-              {/* <Dropdown
-                title="Services"
-                list={["Service1", "Service1", "Service1"]}
-              /> */}
-            </Link>
-          </li>
-          <li>
-            <Link href="/projects">
-              {/* <Dropdown
-                title="Projects"
-                list={["Projects1", "Projects1", "Projects1"]}
-              /> */}
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link href="/about-us">
-              About us
-              {/* <Dropdown
-                title="About Us"
-                list={["About Us1", "About Us2", "About Us3"]}
-              /> */}
-            </Link>
-          </li>
-          <li>
-            Contact us
-          </li>
-        </ul>
+        <NavigationMenu>
+          <NavigationMenuList>
+            {/* Home  */}
+            <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-base`}>
+                  Home
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            {/* Services  */}
+            <NavigationMenuItem className="hover:bg-none">
+              <NavigationMenuTrigger className="text-base ">Services</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="flex flex-col gap-3 p-6 md:w-[200px] lg:w-[300px] text list-disc">
+                  <li className="">
+                    <NavigationMenuLink asChild>
+                      <Link href="/" legacyBehavior passHref>
+                        <a>Corrosion Prevention</a>
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                  <li>
+                    <NavigationMenuLink asChild>
+                      <Link href="/" legacyBehavior passHref>
+                        <a>Coating Inspection</a>
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+
+            {/* Projects  */}
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-base ">Projects</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                  Temp
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+
+            {/* About Us */}
+            <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-base`}>
+                  About Us
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        <Link href="#contact-us" className="text-white text-lg bg-black px-4 py-2 rounded-full">Contact Us</Link>
       </div>
 
-      {/* Mobile Menu Button  */}
+
+
       <div className="flex md:hidden gap-4">
-        <button>Contact us</button>
+        <Link href="#contact-us" className="text-white text-base bg-black px-4 py-2 rounded-full">Contact Us</Link>
         <button onClick={() => setIsOpen(!isOpen)}>
           <MdMenu size={24} />
         </button>
@@ -74,35 +110,30 @@ const Navbar = () => {
         className={`relative z-50 ${isOpen ? "" : "hidden"} transition-all `}
       >
         <div
-          className={`fixed inset-y-0 right-0 z-10 w-full px-8 py-8 overflow-y-auto bg-base-200 sm:max-w-sm sm:ring-1 
+          className={`fixed inset-y-0 right-0 z-10 w-full px-4 py-10 overflow-y-auto bg-base-200 sm:max-w-sm sm:ring-1 
           sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300 bg-white`}
         >
           <div className="flex items-center justify-between">
-            <button
-              title="Contact us"
-              className="btn bg-black text-white font-light rounded-full"
-            >
-              Contact us
-            </button>
-
+            <Link href="#contact-us" className="text-white text-base bg-black px-4 py-2 rounded-full">Contact Us</Link>
             <Link
               className="flex items-center gap-2 shrink-0 "
               title={`${config.companyName} hompage`}
               href="/"
             ></Link>
+
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5"
+              className="rounded-md ml-[0.6rem]"
               onClick={() => setIsOpen(false)}
             >
               <span className="sr-only">Close menu</span>
 
-              <MdClose className="w-8 h-8" />
+              <MdClose size={24} />
             </button>
           </div>
 
           {/* Links/Content on small screens */}
-          <div className="flex flex-col  justify-between mt-8 gap-8 ">
+          <div className="flex flex-col justify-between mt-8 gap-8 ">
             <div className="flex flex-col items-start gap-4">
               <ul className="flex gap-4 flex-col">
                 <li className="font-semibold">
@@ -153,7 +184,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

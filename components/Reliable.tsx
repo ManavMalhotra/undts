@@ -7,7 +7,7 @@ import { PiDropBold } from 'react-icons/pi'
 
 function Reliable() {
     return (
-        <section className="flex flex-col gap-4 px-8 py-8 md:px-16 md:flex-row">
+        <section className="col-span-8 flex flex-col gap-4 px-8 py-8 md:px-16 md:flex-row">
 
             <div className="md:w-2/5 md:flex md:justify-between md:flex-col md:pr-8">
                 <h1 className="text-2xl md:text-4xl">

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Form() {
     return (
-        <section className="flex flex-col px-8 py-8 md:px-16">
+        <section className="col-span-8 flex flex-col px-8 py-8 md:px-16">
 
             <h1 className="text-2xl">We are here to help you get started</h1>
 

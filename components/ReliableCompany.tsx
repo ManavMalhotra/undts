@@ -7,7 +7,7 @@ import "react-multi-carousel/lib/styles.css";
 
 function ReliableCompany() {
     return (
-        <section className="px-8 py-8 md:px-16">
+        <section className="col-span-8 py-8">
 
             <Carousel
                 additionalTransfrom={0}
