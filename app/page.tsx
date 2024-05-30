@@ -20,16 +20,16 @@ export default function page() {
   return (
     <>
       {/* <NavigationMenuDemo /> */}
-      <main className="grid grid-cols-4 md:grid-cols-8 gap-4 mx-4 md:mx-16">
+      <main className="grid grid-cols-4 gap-4 mx-4 md:grid-cols-8 md:mx-16">
         <Navbar />
         {/* Reliable Section */}
         {/* <Reliable /> */}
         {/* Our Esteemed Clients */}
         {/* <Esteemed /> */}
         {/* Our Services */}
-        <OurServices />
+        {/* <OurServices /> */}
         {/* Statistics */}
-        {/* <Statistics /> */}
+        <Statistics />
         {/* Reliable Company */}
         {/* <ReliableCompany /> */}
         {/* Help you get started */}

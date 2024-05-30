@@ -2,39 +2,39 @@ import React from 'react'
 
 function Statistics() {
     return (
-        <section className="col-span-4 md:col-span-8 py-8">
-            <h1 className="text-2xl text-center md:text-4xl " >How we done so far</h1>
+        <section className="font-[----font-raleway] col-span-4 py-8 md:col-span-8">
+            <h1 className="text-3xl text-center md:text-4xl " >How we done so far</h1>
 
-            <section className="flex flex-col gap-8 md:flex-row px-16 py-16">
-                <div className="text-center px-8">
-                    <div className="flex justify-center">
-                        <h1 className="text-8xl">232</h1>
-                        <h4 className="mt-4">Clients</h4>
+            <section className="flex flex-col gap-8 px-8 py-16 md:flex-row">
+                <div className="px-4 text-center">
+                    <div className="flex items-start justify-center">
+                        <h1 className="text-6xl md:text-8xl text-[#8F2D26]">232</h1>
+                        <h4 className="mt-4 text-xs font-semibold md:text-2xl">Clients</h4>
                     </div>
                     <div className="mt-2">
-                        <p>
+                        <p className='text-xs md:text-sm'>
                             UNDTS has been in business from 1984 and so far we have build tremendous value for our clients
                         </p>
                     </div>
                 </div>
-                <div className="text-center px-8">
-                    <div className="flex justify-center">
-                        <h1 className="text-8xl">15</h1>
-                        <h4 className="mt-4">Years</h4>
+                <div className="px-4 text-center">
+                    <div className="flex items-start justify-center">
+                        <h1 className="text-6xl md:text-8xl text-[#8F2D26]">15</h1>
+                        <h4 className="mt-4 text-xs font-semibold md:text-2xl">Years</h4>
                     </div>
                     <div className="mt-2">
-                        <p>
+                        <p className='text-xs md:text-sm'>
                             UNDTS has been in business from 1984 and so far we have build tremendous value for our clients
                         </p>
                     </div>
                 </div>
-                <div className="text-center px-8">
-                    <div className="flex justify-center">
-                        <h1 className="text-8xl">521</h1>
-                        <h4 className="mt-4">Projects</h4>
+                <div className="px-4 text-center">
+                    <div className="flex items-start justify-center">
+                        <h1 className="text-6xl md:text-8xl text-[#8F2D26]">521</h1>
+                        <h4 className="mt-4 text-xs font-semibold md:text-2xl">Projects</h4>
                     </div>
                     <div className="mt-2">
-                        <p>
+                        <p className='text-xs md:text-sm'>
                             UNDTS has been in business from 1984 and so far we have build tremendous value for our clients
                         </p>
                     </div>
