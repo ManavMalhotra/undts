@@ -20,7 +20,7 @@ function Reliable() {
 
             </div>
 
-            <section className=" grid items-center grid-cols-2 gap-4 align-middle md:w-3/5 md:grid-cols-2">
+            <section className="grid items-center grid-cols-2 gap-4 align-middle  md:w-3/5 md:grid-cols-2">
                 <div className="">
                     <IoHelpBuoyOutline className="w-6 h-auto md:w-8 text-[#8F2D26]" />
                     <h4 className="font-bold text-[#8F2D26]">Safety</h4>

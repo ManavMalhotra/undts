@@ -23,11 +23,11 @@ export default function page() {
       <main className="grid grid-cols-4 md:grid-cols-8 gap-4 mx-4 md:mx-16">
         <Navbar />
         {/* Reliable Section */}
-        <Reliable />
+        {/* <Reliable /> */}
         {/* Our Esteemed Clients */}
         {/* <Esteemed /> */}
         {/* Our Services */}
-        {/* <OurServices /> */}
+        <OurServices />
         {/* Statistics */}
         {/* <Statistics /> */}
         {/* Reliable Company */}
