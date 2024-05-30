@@ -3,7 +3,7 @@ import { IoHelpBuoyOutline } from 'react-icons/io5'
 
 function OurServices() {
     return (
-        <section className="col-span-8 py-8 ">
+        <section className="col-span-4 md:col-span-8 py-8 ">
             <h1 className="text-2xl text-center md:text-4xl" >Our Services</h1>
             <section className="grid grid-cols-1 px-16 py-8 md:gap-x-4 md:grid-cols-3 md:gap-y-16 ">
                 <div className="">

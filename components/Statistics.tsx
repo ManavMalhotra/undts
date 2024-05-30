@@ -2,7 +2,7 @@ import React from 'react'
 
 function Statistics() {
     return (
-        <section className="col-span-8 py-8">
+        <section className="col-span-4 md:col-span-8 py-8">
             <h1 className="text-2xl text-center md:text-4xl " >How we done so far</h1>
 
             <section className="flex flex-col gap-8 md:flex-row px-16 py-16">
