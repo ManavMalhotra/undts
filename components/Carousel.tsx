@@ -1,11 +1,11 @@
 "use client"
 // import the hook and options type
-// @ts-ignore
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import React from "react";
 import { PropsWithChildren, useEffect, useState } from "react";
 import CarouselControls from "./CarouselControls";
 import Dots from "./Dots";
+import "./embla.css";
 
 // Define the props
 type Props = PropsWithChildren & EmblaOptionsType;
@@ -33,24 +33,27 @@ const Carousel = ({ children, ...options }: Props) => {
     const length = React.Children.count(children);
     const canScrollNext = !!emblaApi?.canScrollNext();
     const canScrollPrev = !!emblaApi?.canScrollPrev();
+
     return (
         <>
-            <div className="overflow-hidden h-[100%] px-32" ref={emblaRef}>
-                <div className="flex gap-32">
-                    {children}
+            <div className="embla md:col-span-8 col-span-4" ref={emblaRef}>
+                <div className=" embla__container" style={{
+                }}>
+                        {children}
+                </div>
+                <div className="flex justify-between ">
+                    <Dots itemsLength={length} selectedIndex={selectedIndex} />
+                    <CarouselControls
+                        canScrollNext={canScrollNext}
+                        canScrollPrev={canScrollPrev}
+                        onNext={() => emblaApi?.scrollNext()}
+                        onPrev={() => emblaApi?.scrollPrev()}
+                        options={options}
+                        setSelectedIndex
+                        className="z-10"
+                    />
                 </div>
             </div>
-            <Dots itemsLength={length} selectedIndex={selectedIndex} />
-            <CarouselControls
-                canScrollNext={canScrollNext}
-                canScrollPrev={canScrollPrev}
-                onNext={() => emblaApi?.scrollNext()}
-                onPrev={() => emblaApi?.scrollPrev()}
-                // @ts-ignore
-                options={options}
-                setSelectedIndex
-                className="z-10"
-            />
         </>
     );
 };

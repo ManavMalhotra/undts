@@ -6,9 +6,9 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
     return (
-        <footer className='grid-cols-8 col-span-4 md:col-span-8 bg-[#FFEEED] md:px-16 px-4 py-8 hidden md;grid'>
+        <footer className='grid-cols-8 col-span-4 md:col-span-8 bg-[#FFEEED] md:px-16 px-4 py-8 hidden md:grid'>
 
-            <section className='col-span-2 flex flex-col justify-between'>
+            <section className='flex flex-col justify-between col-span-2'>
                 <Image src={logo} alt='undts logo' className='w-24' priority={true} width={80} height={40} />
                 <p>India’s most reliable corrosion prevention service company</p>
                 <div className="flex justify-between">
@@ -22,7 +22,7 @@ export default function Footer() {
                     <h6 className="text-sm text-gray-400">Reach out to us</h6>
                     <h6 className="underline">info@udts.com</h6>
                 </div>
-                <p className='text-nowrap mt-4'>© Copyright UNDTS. All Rights Reserved</p>
+                <p className='mt-4 text-nowrap'>© Copyright UNDTS. All Rights Reserved</p>
             </section>
             <section className='col-span-1'></section>
             <section className='col-span-2'>

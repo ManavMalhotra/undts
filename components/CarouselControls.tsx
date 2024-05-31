@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 type Props = {
   canScrollPrev: boolean;
@@ -16,13 +17,8 @@ const CarouselControls = (props: Props) => {
           }
         }}
         disabled={!props.canScrollPrev}
-        className={classNames({
-          "px-4 py-2 text-white rounded-md": true,
-          "bg-indigo-200": !props.canScrollPrev,
-          "bg-indigo-400": props.canScrollPrev,
-        })}
       >
-        Prev
+        <FaArrowCircleLeft color="#8F2D26" size={24} />
       </button>
       <button
         onClick={() => {
@@ -31,13 +27,8 @@ const CarouselControls = (props: Props) => {
           }
         }}
         disabled={!props.canScrollNext}
-        className={classNames({
-          "px-4 py-2 text-white rounded-md": true,
-          "bg-indigo-200": !props.canScrollNext,
-          "bg-indigo-400": props.canScrollNext,
-        })}
       >
-        Next
+        <FaArrowCircleRight color="#8F2D26" size={24} />
       </button>
     </div>
   );

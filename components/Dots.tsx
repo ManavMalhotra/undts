@@ -7,13 +7,13 @@ type Props = {
 const Dots = ({ itemsLength, selectedIndex }: Props) => {
     const arr = new Array(itemsLength).fill(0);
     return (
-        <div className="flex justify-center gap-1 my-2 -translate-y-5">
+        <div className="flex justify-center gap-1 my-2">
             {arr.map((_, index) => {
                 const selected = index === selectedIndex;
                 return (
                     <div
                         className={classNames({
-                            "h-2 w-2 rounded-full transition-all duration-300 bg-indigo-400":
+                            "h-2 w-2 rounded-full transition-all duration-300 bg-[#8F2D26]":
                                 true,
                             // tune down the opacity if slide is not selected
                             "opacity-50": !selected,
