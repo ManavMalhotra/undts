@@ -1,5 +1,5 @@
 "use client"
-// import the hook and options type
+// @ts-ignore
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import React from "react";
 import { PropsWithChildren, useEffect, useState } from "react";
@@ -36,10 +36,10 @@ const Carousel = ({ children, ...options }: Props) => {
 
     return (
         <>
-            <div className="embla md:col-span-8 col-span-4" ref={emblaRef}>
+            <div className="col-span-4 embla md:col-span-8" ref={emblaRef}>
                 <div className=" embla__container" style={{
                 }}>
-                        {children}
+                    {children}
                 </div>
                 <div className="flex justify-between ">
                     <Dots itemsLength={length} selectedIndex={selectedIndex} />
