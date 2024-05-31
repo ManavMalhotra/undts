@@ -76,9 +76,17 @@
 }
 
 body {
-  font-family: var(----font-eb-garamond);
+}
+
+h1,
+h2 {
+  font-family: var(--font-eb-garamond);
 }
 
 header {
-  font-family: var(----font-raleway);
+  font-family: var(--font-raleway);
+}
+
+a[data-active] {
+  color: #8f2d26;
 }

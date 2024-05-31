@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { EB_Garamond, Raleway } from "next/font/google"
 
 import { cn } from "@/lib/utils"
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const eb_garamond = EB_Garamond({
   subsets: ["latin"],
@@ -27,7 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="light">
-      <body className={`${eb_garamond.variable} ${raleway.variable}`}>{children}</body>
+      <body className={`${eb_garamond.variable} ${raleway.variable}`}>
+        <main className="grid grid-cols-4 gap-4 mx-4 md:grid-cols-8 md:mx-16">
+          <Navbar />
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

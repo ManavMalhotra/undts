@@ -23,37 +23,53 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const pathName = usePathname();
+  console.log(pathName)
+
   return (
     <header className="flex items-center justify-between col-span-4 my-8 md:col-span-8">
       {/* logo  */}
-      <Image
-        src={logo}
-        alt="undts logo"
-        className="w-24"
-        priority={true}
-        width={80}
-        height={40}
-
-      />
+      <Link href="/">
+        <Image
+          src={logo}
+          alt="undts logo"
+          className="w-24"
+          priority={true}
+          width={80}
+          height={40}
+        />
+      </Link>
       <div className="hidden gap-8 md:flex">
 
         <NavigationMenu>
           <NavigationMenuList>
             {/* Home  */}
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-base`}>
-                  Home
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                href="/"
+                className={`${navigationMenuTriggerStyle()} `}
+                active={pathName === "/"}
+              >
+                Home
+              </NavigationMenuLink>
             </NavigationMenuItem>
             {/* Services  */}
             <NavigationMenuItem className="hover:bg-none">
-              <NavigationMenuTrigger className="text-base ">Services</NavigationMenuTrigger>
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} text-base`}
+                href="/services"
+                active={pathName === "/services"}
+              >
+
+                Services
+              </NavigationMenuLink>
+
+              {/* <NavigationMenuTrigger className="text-base ">Services</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="flex flex-col gap-3 p-6 md:w-[200px] lg:w-[300px] text list-disc">
                   <li className="">
@@ -71,32 +87,37 @@ const Navbar = () => {
                     </NavigationMenuLink>
                   </li>
                 </ul>
-              </NavigationMenuContent>
+              </NavigationMenuContent> */}
             </NavigationMenuItem>
 
             {/* Projects  */}
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-base ">Projects</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-base`}
+                href="/projects"
+                active={pathName === "/projects"}
+              >
+                Projects
+              </NavigationMenuLink>
+              {/* <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                   Temp
                 </ul>
-              </NavigationMenuContent>
+              </NavigationMenuContent> */}
             </NavigationMenuItem>
 
             {/* About Us */}
             <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-base`}>
-                  About Us
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-base`}
+                href="/about-us"
+                active={pathName === "/about-us"}
+              >
+                About Us
+              </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
         <Link href="#contact-us" className="px-4 py-2 text-lg text-white bg-black rounded-full">Contact Us</Link>
       </div>
-
 
 
       <div className="flex gap-4 md:hidden">
