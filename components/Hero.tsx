@@ -19,7 +19,7 @@ export default function Hero() {
             </section>
             <Carousel>
                 <div className="relative hidden embla__slide md:block">
-                    <Image src={project1} alt="project1" className="w-full h-auto" />
+                    <Image src={project1} alt="project1" />
                     <section className="absolute flex flex-col items-start justify-between w-full max-w-xs px-4 py-4 bg-white border border-black shadow-lg top-4 left-20 sm:max-w-sm sm:w-auto sm:flex-row sm:items-center rounded-2xl">
                         <div className="flex-1">
                             <h1 className="text-2xl">Project Name</h1>
