@@ -48,6 +48,7 @@ const Carousel = ({ children, ...options }: Props) => {
                         canScrollPrev={canScrollPrev}
                         onNext={() => emblaApi?.scrollNext()}
                         onPrev={() => emblaApi?.scrollPrev()}
+                        // @ts-ignore
                         options={options}
                         setSelectedIndex
                         className="z-10"

@@ -28,7 +28,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="col-span-4 md:col-span-8 flex justify-between my-8 items-center">
+    <header className="flex items-center justify-between col-span-4 my-8 md:col-span-8">
       {/* logo  */}
       <Image
         src={logo}
@@ -37,8 +37,9 @@ const Navbar = () => {
         priority={true}
         width={80}
         height={40}
+
       />
-      <div className="gap-8 hidden md:flex">
+      <div className="hidden gap-8 md:flex">
 
         <NavigationMenu>
           <NavigationMenuList>
@@ -93,13 +94,13 @@ const Navbar = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <Link href="#contact-us" className="text-white text-lg bg-black px-4 py-2 rounded-full">Contact Us</Link>
+        <Link href="#contact-us" className="px-4 py-2 text-lg text-white bg-black rounded-full">Contact Us</Link>
       </div>
 
 
 
-      <div className="flex md:hidden gap-4">
-        <Link href="#contact-us" className="text-white text-base bg-black px-4 py-2 rounded-full">Contact Us</Link>
+      <div className="flex gap-4 md:hidden">
+        <Link href="#contact-us" className="px-4 py-2 text-base text-white bg-black rounded-full">Contact Us</Link>
         <button onClick={() => setIsOpen(!isOpen)}>
           <MdMenu size={24} />
         </button>
@@ -114,7 +115,7 @@ const Navbar = () => {
           sm:ring-neutral/10 transform origin-right transition ease-in-out duration-300 bg-white`}
         >
           <div className="flex items-center justify-between">
-            <Link href="#contact-us" className="text-white text-base bg-black px-4 py-2 rounded-full">Contact Us</Link>
+            <Link href="#contact-us" className="px-4 py-2 text-base text-white bg-black rounded-full">Contact Us</Link>
             <Link
               className="flex items-center gap-2 shrink-0 "
               title={`${config.companyName} hompage`}
@@ -133,9 +134,9 @@ const Navbar = () => {
           </div>
 
           {/* Links/Content on small screens */}
-          <div className="flex flex-col justify-between mt-8 gap-8 ">
+          <div className="flex flex-col justify-between gap-8 mt-8 ">
             <div className="flex flex-col items-start gap-4">
-              <ul className="flex gap-4 flex-col">
+              <ul className="flex flex-col gap-4">
                 <li className="font-semibold">
                   <Link href="/">Projects</Link>
                 </li>
@@ -155,7 +156,7 @@ const Navbar = () => {
             </div>
 
             <div>
-              <h6 className="text-gray-400 text-sm">Reach out to us</h6>
+              <h6 className="text-sm text-gray-400">Reach out to us</h6>
               <h6 className="underline">info@udts.com</h6>
             </div>
 
@@ -173,7 +174,7 @@ const Navbar = () => {
                 India ’s most reliable corrosion prevention service company
               </h5>
 
-              <div className="flex gap-4 justify-evenly my-4">
+              <div className="flex gap-4 my-4 justify-evenly">
                 <FaInstagram size={24} />
                 <FaLinkedin size={24} />
                 <FaFacebook size={24} />

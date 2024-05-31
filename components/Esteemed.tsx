@@ -8,7 +8,7 @@ import client5 from "@/public/clients/Rectangle 124.png";
 import client6 from "@/public/clients/Rectangle 125.png";
 import client7 from "@/public/clients/Rectangle 126.png";
 
-function Esteemed() {
+export default function Esteemed() {
     return (
         <section className="col-span-4 py-8 md:col-span-8">
             <h1 className="text-2xl text-center md:text-4xl" >
@@ -43,5 +43,3 @@ function Esteemed() {
         </section>
     )
 }
-
-export default Esteemed
