@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 type Props = {
@@ -9,7 +10,7 @@ type Props = {
 };
 const CarouselControls = (props: Props) => {
   return (
-    <div className="flex justify-end gap-2 ">
+    <div className="flex justify-end gap-4 ">
       <button
         onClick={() => {
           if (props.canScrollPrev) {
@@ -18,7 +19,7 @@ const CarouselControls = (props: Props) => {
         }}
         disabled={!props.canScrollPrev}
       >
-        <FaArrowCircleLeft color="#8F2D26" size={24} />
+        <BsArrowLeftCircleFill color="#8F2D26" size={32} />
       </button>
       <button
         onClick={() => {
@@ -27,8 +28,9 @@ const CarouselControls = (props: Props) => {
           }
         }}
         disabled={!props.canScrollNext}
+        className=""
       >
-        <FaArrowCircleRight color="#8F2D26" size={24} />
+        <BsArrowRightCircleFill color="#8F2D26" size={34} className="bg-white" />
       </button>
     </div>
   );

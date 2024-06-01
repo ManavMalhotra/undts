@@ -7,10 +7,11 @@ import project1 from "@/app/Imageproject1.png"
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import Container from './Container';
 
 export default function Hero() {
     return (
-        <section className="col-span-4 py-4 text-center md:col-span-8">
+        <Container className="text-center">
             <section className="mb-16">
                 <h3 className="text-base">Since 1990</h3>
                 <h1 className="text-4xl md:text-6xl md:px-64">
@@ -44,6 +45,6 @@ export default function Hero() {
                 </div>
 
             </Carousel>
-        </section>
+        </Container>
     )
 }

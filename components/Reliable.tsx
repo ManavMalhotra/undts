@@ -4,10 +4,11 @@ import { IoMdAlarm } from 'react-icons/io'
 import { IoDiamondOutline, IoHelpBuoyOutline } from 'react-icons/io5'
 import { MdArrowRight } from 'react-icons/md'
 import { PiDropBold } from 'react-icons/pi'
+import Container from './Container'
 
 function Reliable() {
     return (
-        <section className="font-[----font-raleway] col-span-4 md:col-span-8 flex flex-col gap-4 px-4 py-8 md:px-16 md:flex-row">
+        <Container className="flex flex-col gap-4 px-4 md:px-16 md:flex-row">
 
             <div className="md:w-2/5 md:flex md:justify-between md:flex-col md:pr-8">
                 <h1 className="font-[--font-eb-garamond] text-2xl md:text-4xl">
@@ -51,7 +52,7 @@ function Reliable() {
                 </div>
             </section>
 
-        </section>
+        </Container>
     )
 }
 

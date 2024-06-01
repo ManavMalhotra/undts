@@ -1,8 +1,9 @@
 import React from 'react'
+import Container from './Container'
 
 function Statistics() {
     return (
-        <section className="font-[----font-raleway] col-span-4 py-8 md:col-span-8">
+        <Container className="">
             <h1 className="text-3xl text-center md:text-4xl " >How we done so far</h1>
 
             <section className="flex flex-col gap-8 px-8 py-16 md:flex-row">
@@ -40,7 +41,7 @@ function Statistics() {
                     </div>
                 </div>
             </section>
-        </section>
+        </Container>
     )
 }
 

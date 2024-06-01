@@ -17,7 +17,6 @@ export default function page() {
 
   return (
     <>
-      {/* <NavigationMenuDemo /> */}
       {/* Hero Section */}
       <Hero />
       {/* Reliable Section */}

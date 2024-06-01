@@ -1,9 +1,10 @@
 import React from 'react'
 import { IoHelpBuoyOutline } from 'react-icons/io5'
+import Container from './Container'
 
 function OurServices() {
     return (
-        <section className="font-[----font-raleway] col-span-4 md:col-span-8 gap-4 px-4 py-8 md:px-16 md:flex-row">
+        <Container className="gap-4 md:px-16 md:flex-row">
             <h1 className="text-3xl text-center font-[--font-eb-garamond] md:text-4xl" >Our Services</h1>
             <section className="grid grid-cols-1 gap-8 py-8 md:grid-cols-3 md:gap-y-16 ">
                 <div className="">
@@ -42,7 +43,7 @@ function OurServices() {
                     <p>We prioritise safety across all our services </p>
                 </div>
             </section>
-        </section>
+        </Container>
     )
 }
 

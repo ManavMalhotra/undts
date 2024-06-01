@@ -52,7 +52,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="/"
-                className={`${navigationMenuTriggerStyle()} `}
+                className={`font-bold ${navigationMenuTriggerStyle()} `}
                 active={pathName === "/"}
               >
                 Home

@@ -1,9 +1,10 @@
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
+import Container from './Container'
 
 function Form() {
     return (
-        <section className="container flex flex-col col-span-8 px-4 px-8 py-8 mx-auto md:px-16">
+        <Container className="flex flex-col">
 
             <div className="flex flex-col md:flex-row md:space-x-8">
                 {/* Left Side */}
@@ -94,7 +95,7 @@ function Form() {
                 </div>
             </div>
 
-        </section>
+        </Container>
     )
 }
 

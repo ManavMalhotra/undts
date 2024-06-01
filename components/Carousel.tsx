@@ -4,8 +4,9 @@ import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import React from "react";
 import { PropsWithChildren, useEffect, useState } from "react";
 import CarouselControls from "./CarouselControls";
-import Dots from "./Dots";
+// import Dots from "./Dots";
 import "./embla.css";
+import classNames from "classnames";
 
 // Define the props
 type Props = PropsWithChildren & EmblaOptionsType;
@@ -41,7 +42,7 @@ const Carousel = ({ children, ...options }: Props) => {
                 }}>
                     {children}
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex justify-between relative bottom-[6vh] md:mx-16 mx-[1vh] ">
                     <Dots itemsLength={length} selectedIndex={selectedIndex} />
                     <CarouselControls
                         canScrollNext={canScrollNext}
@@ -58,4 +59,32 @@ const Carousel = ({ children, ...options }: Props) => {
         </>
     );
 };
+
+type DotProps = {
+    itemsLength: number;
+    selectedIndex: number;
+};
+const Dots = ({ itemsLength, selectedIndex }: DotProps) => {
+    const arr = new Array(itemsLength).fill(0);
+    return (
+        <div className="flex justify-center gap-1 md:my-2">
+            {arr.map((_, index) => {
+                const selected = index === selectedIndex;
+                return (
+                    <div
+                        className={classNames({
+                            "h-2 w-2 rounded-full transition-all duration-300 bg-white mx-1":
+                                true,
+                            // tune down the opacity if slide is not selected
+                            "opacity-50": !selected,
+                            "w-8": selected,
+                        })}
+                        key={index}
+                    ></div>
+                );
+            })}
+        </div>
+    );
+};
+
 export default Carousel;
