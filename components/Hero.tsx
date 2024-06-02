@@ -4,6 +4,8 @@ import Image from "next/image";
 import Carousel from "@/components/Carousel";
 
 import project1 from "@/app/Imageproject1.png"
+import project2 from "@/app/project2.png"
+import project3 from "@/app/project3.png"
 
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { FaCircleArrowRight } from "react-icons/fa6";
@@ -19,31 +21,26 @@ export default function Hero() {
                 </h1>
             </section>
             <Carousel>
-                <div className="relative hidden embla__slide md:block">
-                    <Image src={project1} alt="project1" />
-                    <section className="absolute flex flex-col items-start justify-between w-full max-w-xs px-4 py-4 bg-white border border-black shadow-lg top-4 left-20 sm:max-w-sm sm:w-auto sm:flex-row sm:items-center rounded-2xl">
-                        <div className="flex-1">
+                <div className="relative embla__slide">
+                    <Image src={project1} alt="project1" layout="responsive" />
+                    <section className="absolute flex flex-row items-start justify-between w-full max-w-xs px-4 py-4 bg-white shadow-lg top-4 left-20 rounded-2xl text-left">
+                        <div className="">
                             <h1 className="text-2xl">Project Name</h1>
                             <p className="mt-2 text-sm">
                                 We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.
                             </p>
                         </div>
-                        <div className="flex-none mt-4 sm:ml-4 sm:mt-0">
+                        <div className="mt-4 sm:ml-4 sm:mt-0">
                             <FaCircleArrowRight className="w-6 h-6 text-red-700" />
                         </div>
                     </section>
                 </div>
                 <div className="embla__slide">
-                    <Image src={project1} alt="project1" />
+                    <Image src={project2} alt="project2" layout="responsive" />
                 </div>
                 <div className="embla__slide">
-                    <Image src={project1} alt="project1" />
-                </div><div className="embla__slide">
-                    <Image src={project1} alt="project1" />
-                </div><div className="embla__slide">
-                    <Image src={project1} alt="project1" />
+                    <Image src={project3} alt="project3" layout="responsive" />
                 </div>
-
             </Carousel>
         </Container>
     )

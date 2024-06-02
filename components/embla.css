@@ -115,22 +115,24 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  --slide-height: 19rem;
-  --slide-spacing: 4rem;
-  --slide-size: 100%;
+  width: 100%;  /* Ensure the carousel takes the full width */
 }
+
 .embla__container {
   display: flex;
   backface-visibility: hidden;
   touch-action: pan-y pinch-zoom;
-  margin-left: calc(var(--slide-spacing) * -1);
+  margin-left: 0;  /* Remove left margin */
 }
+
 .embla__slide {
-  flex: 0 0 auto;
-  min-width: 0;
-  max-width: 100%;
-  min-width: 0;
-  padding-left: var(--slide-spacing);
+  flex: 0 0 100%;  /* Ensure slides take full width */
+  min-width: 100%;  /* Ensure slides take full width */
+  padding-left: 0;  /* Remove padding */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 2rem;
 }
 
 .embla__slide:first-child {

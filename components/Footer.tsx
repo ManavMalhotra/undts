@@ -11,7 +11,7 @@ export default function Footer() {
             <section className='flex flex-col justify-between col-span-2'>
                 <Image src={logo} alt='undts logo' className='w-24' priority={true} width={80} height={40} />
                 <p>India’s most reliable corrosion prevention service company</p>
-                <div className="flex justify-between">
+                <div className="flex justify-normal gap-4">
                     <FaInstagram size={24} color='#8F2D26' />
                     <FaLinkedin size={24} color='#8F2D26' />
                     <FaFacebook size={24} color='#8F2D26' />
@@ -20,7 +20,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <h6 className="text-sm text-gray-400">Reach out to us</h6>
-                    <h6 className="underline">info@udts.com</h6>
+                    <h6 className="underline">in`fo`@udts.com</h6>
                 </div>
                 <p className='mt-4 text-nowrap'>© Copyright UNDTS. All Rights Reserved</p>
             </section>

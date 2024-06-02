@@ -83,10 +83,49 @@ h2 {
   font-family: var(--font-eb-garamond);
 }
 
+p {
+  font-family: var(--font-raleway);
+}
+
 header {
   font-family: var(--font-raleway);
 }
 
 a[data-active] {
   color: #8f2d26;
+}
+
+p-viewport {
+  font-size: calc(1rem + 0.5vw);
+}
+
+input[type="checkbox"] {
+  accent-color: #c70039;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  animation: scrolling 20s linear infinite;
+}
+
+.marquee-item {
+  flex: 0 0 20vw;
+  margin: 0 1vw;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

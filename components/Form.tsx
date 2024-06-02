@@ -20,10 +20,10 @@ function Form() {
                             "CIPL Survey Equipment",
                             "Pipeline Defect Mapper (PDM)"
                         ].map(service => (
-                            <li key={service} className="flex items-center">
-                                <FaCheckCircle className="mr-2 text-red-600" />
-                                {service}
-                            </li>
+                            <div className='flex gap-2'>
+                                <input type="checkbox" key={service} className="checkbox w-4 h-auto" />
+                                <p className='p-viewport'>{service}</p>
+                            </div>
                         ))}
                     </ul>
                 </div>
@@ -87,7 +87,7 @@ function Form() {
                             <label htmlFor="updates" className="block ml-2 text-sm text-gray-900">I agree to receive updates from undts</label>
                         </div>
                         <div>
-                            <button type="submit" className="w-full px-6 py-3 text-sm font-medium text-white bg-red-600 border border-transparent rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                            <button type="submit" className="w-full px-6 py-3 text-sm font-medium text-white bg-[#8F2D26] border border-transparent rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
                                 Request a call back
                             </button>
                         </div>

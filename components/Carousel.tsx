@@ -38,20 +38,18 @@ const Carousel = ({ children, ...options }: Props) => {
     return (
         <>
             <div className="col-span-4 embla md:col-span-8" ref={emblaRef}>
-                <div className=" embla__container" style={{
-                }}>
+                <div className="embla__container">
                     {children}
                 </div>
-                <div className="flex justify-between relative bottom-[6vh] md:mx-16 mx-[1vh] ">
+                <div className="flex justify-between md:mx-16 mx-[1vh]">
                     <Dots itemsLength={length} selectedIndex={selectedIndex} />
                     <CarouselControls
                         canScrollNext={canScrollNext}
                         canScrollPrev={canScrollPrev}
                         onNext={() => emblaApi?.scrollNext()}
                         onPrev={() => emblaApi?.scrollPrev()}
-                        // @ts-ignore
                         options={options}
-                        setSelectedIndex
+                        setSelectedIndex={setSelectedIndex}
                         className="z-10"
                     />
                 </div>
