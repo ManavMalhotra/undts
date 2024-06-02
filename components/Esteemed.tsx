@@ -16,30 +16,57 @@ export default function Esteemed() {
             </h1>
 
             {/* show the images in a col */}
-            <div className="grid items-center grid-cols-7 gap-4 mt-8 overflow-x-hidden">
-                <div className="col-span-1">
-                    <Image src={client1} alt="client1" />
-                </div>
-                <div className="col-span-1">
-                    <Image src={client2} alt="client2" />
-                </div>
-                <div className="col-span-1">
-                    <Image src={client3} alt="client3" />
-                </div>
-                <div className="col-span-1">
-                    <Image src={client4} alt="client4" />
-                </div>
-                <div className="col-span-1">
-                    <Image src={client5} alt="client5" />
-                </div>
-                <div className="col-span-1">
-                    <Image src={client6} alt="client6" />
-                </div>
-                <div className="col-span-1">
-                    <Image src={client7} alt="client7" />
+            <div className="marquee">
+                <div className="marquee-content">
+                    <div className="marquee-item">
+                        <Image src={client1} alt="client1" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client2} alt="client2" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client3} alt="client3" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client4} alt="client4" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client5} alt="client5" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client6} alt="client6" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client7} alt="client7" />
+                    </div>
+
+                    {/* <!-- Duplicate the images for the seamless loop effect --> */}
+                    <div className="marquee-item">
+                        <Image src={client1} alt="client1" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client2} alt="client2" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client3} alt="client3" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client4} alt="client4" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client5} alt="client5" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client6} alt="client6" />
+                    </div>
+                    <div className="marquee-item">
+                        <Image src={client7} alt="client7" />
+                    </div>
+
                 </div>
             </div>
 
-        </section>
+
+        </section >
     )
 }
