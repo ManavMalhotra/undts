@@ -23,7 +23,7 @@ export default function Hero() {
             <Carousel>
                 <div className="relative embla__slide">
                     <Image src={project1} alt="project1" layout="responsive" />
-                    <section className="absolute flex flex-row items-start justify-between w-full max-w-xs px-4 py-4 bg-white shadow-lg top-4 left-20 rounded-2xl text-left">
+                    <section className="absolute flex-row items-start justify-between hidden w-full max-w-xs px-4 py-4 text-left bg-white shadow-lg md:flex top-4 left-20 rounded-2xl">
                         <div className="">
                             <h1 className="text-2xl">Project Name</h1>
                             <p className="mt-2 text-sm">
