@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+
 import client1 from "@/public/clients/Rectangle 120.png";
 import client2 from "@/public/clients/Rectangle 121.png";
 import client3 from "@/public/clients/Rectangle 122.png";
@@ -8,14 +9,15 @@ import client5 from "@/public/clients/Rectangle 124.png";
 import client6 from "@/public/clients/Rectangle 125.png";
 import client7 from "@/public/clients/Rectangle 126.png";
 
+import Container from './Container';
+
 export default function Esteemed() {
     return (
-        <section className="col-span-4 py-8 md:col-span-8">
+        <Container className="">
             <h1 className="text-2xl text-center md:text-4xl" >
                 Our Esteem Clients
             </h1>
 
-            {/* show the images in a col */}
             <div className="marquee">
                 <div className="marquee-content">
                     <div className="marquee-item">
@@ -40,7 +42,7 @@ export default function Esteemed() {
                         <Image src={client7} alt="client7" />
                     </div>
 
-                    {/* <!-- Duplicate the images for the seamless loop effect --> */}
+                    {/* Duplicate the images for the seamless loop effect */}
                     <div className="marquee-item">
                         <Image src={client1} alt="client1" />
                     </div>
@@ -65,8 +67,6 @@ export default function Esteemed() {
 
                 </div>
             </div>
-
-
-        </section >
+        </Container >
     )
 }
