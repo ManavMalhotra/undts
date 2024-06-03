@@ -6,11 +6,11 @@ function Form() {
     return (
         <Container className="flex flex-col">
 
-            <div className="flex flex-col md:flex-row md:space-x-8">
+            <div className="flex flex-col md:flex-row md:space-x-8 gap-4">
                 {/* Left Side */}
-                <div className="mb-8 md:w-1/2 md:mb-0">
-                    <h2 className="mb-4 text-4xl font-bold">We are here to help you get started</h2>
-                    <p className="mb-4">Select the interested services* below:</p>
+                <div className="mb-8 md:w-2/5 md:mb-0">
+                    <h2 className="mb-4 text-5xl">We are here to help you get started</h2>
+                    <p className="mb-4 text-lg">Select the interested services* below:</p>
                     <ul className="space-y-2">
                         {[
                             "Soil Resistively",
@@ -21,7 +21,7 @@ function Form() {
                             "Pipeline Defect Mapper (PDM)"
                         ].map(service => (
                             <div className='flex gap-2'>
-                                <input type="checkbox" key={service} className="checkbox w-4 h-auto" />
+                                <input type="checkbox" key={service} className="w-4 h-auto checkbox" />
                                 <p className='p-viewport'>{service}</p>
                             </div>
                         ))}
@@ -29,29 +29,29 @@ function Form() {
                 </div>
 
                 {/* Right Side */}
-                <div className="md:w-1/2">
+                <div className="md:w-3/5">
                     <form className="space-y-4">
                         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                             <div>
-                                <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="fullName" className="block font-medium text-gray-700">
                                     Full Name*
                                 </label>
                                 <input type="text" id="fullName" name="fullName" placeholder="e.g. Nikhil" className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm" />
                             </div>
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="email" className="block font-medium text-gray-700">
                                     Email Id*
                                 </label>
                                 <input type="email" id="email" name="email" placeholder="e.g. Nikhil@undts.com" className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm" />
                             </div>
                             <div>
-                                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="country" className="block font-medium text-gray-700">
                                     Country*
                                 </label>
                                 <input type="text" id="country" name="country" placeholder="e.g. India" className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm" />
                             </div>
                             <div>
-                                <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="phoneNumber" className="block font-medium text-gray-700">
                                     Phone Number*
                                 </label>
                                 <div className="flex">
@@ -63,20 +63,20 @@ function Form() {
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="company" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="company" className="block font-medium text-gray-700">
                                     Company*
                                 </label>
                                 <input type="text" id="company" name="company" placeholder="e.g. Indian Oil" className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm" />
                             </div>
                             <div>
-                                <label htmlFor="industry" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="industry" className="block font-medium text-gray-700">
                                     Industry*
                                 </label>
                                 <input type="text" id="industry" name="industry" placeholder="e.g. Oil & Gas" className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm" />
                             </div>
                         </div>
                         <div>
-                            <label htmlFor="requirement" className="block text-sm font-medium text-gray-700">
+                            <label htmlFor="requirement" className="block font-medium text-gray-700">
                                 Requirement*
                             </label>
                             <textarea id="requirement" name="requirement" rows={4} placeholder="Write your requirement..." className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm"></textarea>
@@ -87,7 +87,7 @@ function Form() {
                             <label htmlFor="updates" className="block ml-2 text-sm text-gray-900">I agree to receive updates from undts</label>
                         </div>
                         <div>
-                            <button type="submit" className="w-full px-6 py-3 text-sm font-medium text-white bg-[#8F2D26] border border-transparent rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                            <button type="submit" className="w-full px-6 py-3 text-sm font-medium text-white bg-[#8F2D26] border border-transparent rounded-3xl hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
                                 Request a call back
                             </button>
                         </div>

@@ -75,7 +75,8 @@
   }
 }
 
-body {
+* {
+  font-family: var(--font-raleway);
 }
 
 h1,
@@ -83,24 +84,20 @@ h2 {
   font-family: var(--font-eb-garamond);
 }
 
-p {
-  font-family: var(--font-raleway);
-}
-
-header {
-  font-family: var(--font-raleway);
-}
-
 a[data-active] {
   color: #8f2d26;
 }
 
-p-viewport {
-  font-size: calc(1rem + 0.5vw);
+.p-viewport {
+  font-size: calc(12px + 0.5vw);
+}
+
+form {
+  font-size: clamp(1rem, 0.8256rem + 0.8584vw, 0.375rem);
 }
 
 input[type="checkbox"] {
-  accent-color: #c70039;
+  accent-color: #8f2d26;
 }
 
 .marquee {

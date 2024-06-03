@@ -13,7 +13,7 @@ function Statistics() {
                         <h4 className="mt-4 text-xs font-semibold md:text-2xl">Clients</h4>
                     </div>
                     <div className="mt-2">
-                        <p className='text-xs md:text-sm'>
+                        <p className='text-xs md:text-sm font-medium'>
                             UNDTS has been in business from 1984 and so far we have build tremendous value for our clients
                         </p>
                     </div>
@@ -24,7 +24,7 @@ function Statistics() {
                         <h4 className="mt-4 text-xs font-semibold md:text-2xl">Years</h4>
                     </div>
                     <div className="mt-2">
-                        <p className='text-xs md:text-sm'>
+                        <p className='text-xs md:text-sm font-medium'>
                             UNDTS has been in business from 1984 and so far we have build tremendous value for our clients
                         </p>
                     </div>
@@ -35,7 +35,7 @@ function Statistics() {
                         <h4 className="mt-4 text-xs font-semibold md:text-2xl">Projects</h4>
                     </div>
                     <div className="mt-2">
-                        <p className='text-xs md:text-sm'>
+                        <p className='text-xs md:text-sm font-medium'>
                             UNDTS has been in business from 1984 and so far we have build tremendous value for our clients
                         </p>
                     </div>

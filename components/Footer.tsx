@@ -20,7 +20,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <h6 className="text-sm text-gray-400">Reach out to us</h6>
-                    <h6 className="underline">in`fo`@udts.com</h6>
+                    <h6 className="underline">info@udts.com</h6>
                 </div>
                 <p className='mt-4 text-nowrap'>© Copyright UNDTS. All Rights Reserved</p>
             </section>
