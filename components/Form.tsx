@@ -155,18 +155,6 @@ const FormComponent = () => {
                                             width: '100%',
                                             fontSize: '100%',
                                         }}
-                                    buttonStyle={{
-                                        background: 'none',
-                                        border: 'none',
-                                        outline: 'none',
-                                        margin: 0,
-                                        padding: '0.75rem',
-                                    }}
-                                    dropdownStyle={{
-                                        borderRadius: '0.375rem',
-                                        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
-                                        marginTop: '0.25rem',
-                                    }}
                                     />
                                 </div>
                                 {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
