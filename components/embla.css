@@ -135,11 +135,6 @@
   border-radius: 2rem;
 }
 
-.embla__slide:first-child {
-  margin-left: 1rem;
-  margin-right: 0.8rem;
-}
-
 @media (min-width: 375px) {
   .embla {
     align-items: center; /* Center the image horizontally on mobile */
@@ -150,9 +145,9 @@
     padding-left: 0; /* Remove padding for smaller screens */
     margin-left: 0;
   }
-
+  /* 
   .embla__slide:first-child {
     margin-left: 0rem;
     margin-right: 0rem;
-  }
+  } */
 }
