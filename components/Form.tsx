@@ -54,8 +54,8 @@ const FormComponent = () => {
             <div className="flex flex-col md:flex-row md:space-x-8 gap-4">
                 {/* Left Side */}
                 <div className="mb-8 md:w-2/5 md:mb-0">
-                    <h2 className="mb-4 text-5xl">We are here to help you get started</h2>
-                    <p className="mb-4 text-lg">Select the interested services* below:</p>
+                    <h2 className="mb-4 md:text-5xl text-2xl">We are here to help you get started</h2>
+                    <p className="mb-4 md:text-lg text-xs">Select the interested services* below:</p>
                     <ul className="space-y-2">
                         {services.map(service => (
                             <div className='flex gap-2' key={service}>
