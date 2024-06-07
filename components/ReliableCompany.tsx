@@ -15,7 +15,7 @@ function ReliableCompany() {
 
                 <p className='pt-4 mb-8'>We prioritise safety across all our services</p>
             </section>
-            <div className='flex justify-between gap-8 px-4'>
+            <div className='flex flex-wrap justify-between gap-8 px-4'>
                 <div className="">
                     <ClientCard name={"Shrikant Madhav Vaidya"} designation={"CEO"} company={"Indian Oil"} />
                 </div>

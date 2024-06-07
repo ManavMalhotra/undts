@@ -84,7 +84,7 @@ const FormComponent = () => {
                             {/* Full Name */}
                             <div>
                                 <label htmlFor="fullName" className="block font-medium text-gray-700">
-                                    Full Name<span className='imp'><p>*</p></span>
+                                    Full Name<span className="text-red-500 imp">&#42;</span>
                                 </label>
                                 <input
                                     type="text"
@@ -103,7 +103,7 @@ const FormComponent = () => {
                             {/* Email */}
                             <div>
                                 <label htmlFor="email" className="block font-medium text-gray-700">
-                                    Email Id<span className='imp'>*</span>
+                                    Email Id<span className="text-red-500 imp">&#42;</span>
                                 </label>
                                 <input
                                     type="email"
@@ -122,7 +122,7 @@ const FormComponent = () => {
                             {/* Country */}
                             <div>
                                 <label htmlFor="country" className="block font-medium text-gray-700">
-                                    Country<span className='imp'>*</span>
+                                    Country<span className="text-red-500 imp">&#42;</span>
                                 </label>
                                 <input
                                     type="text"
@@ -165,7 +165,7 @@ const FormComponent = () => {
                             {/* Company */}
                             <div>
                                 <label htmlFor="company" className="block font-medium text-gray-700">
-                                    Company<span className='imp'>*</span>
+                                    Company<span className="text-red-500 imp">&#42;</span>
                                 </label>
                                 <input
                                     type="text"
@@ -184,7 +184,7 @@ const FormComponent = () => {
                             {/* Industry */}
                             <div>
                                 <label htmlFor="industry" className="block font-medium text-gray-700">
-                                    Industry<span className='imp'>*</span>
+                                    Industry<span className="text-red-500 imp">&#42;</span>
                                 </label>
                                 <input
                                     type="text"
@@ -204,7 +204,7 @@ const FormComponent = () => {
                         {/* Requirement */}
                         <div>
                             <label htmlFor="requirement" className="block font-medium text-gray-700">
-                                Requirement<span className='imp'>*</span>
+                                Requirement<span className="text-red-500 imp">&#42;</span>
                             </label>
                             <textarea
                                 id="requirement"
