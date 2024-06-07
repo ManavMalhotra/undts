@@ -140,10 +140,9 @@ input[type="checkbox"] {
   }
 }
 
-.imp > p {
-  display: inline-block;
-  color: #8f2d26;
-  font-size: 2rem;
+.imp {
+  font-weight: 600;
+  font-size: x-large;
 }
 
 /* locomotive-scroll.css */
