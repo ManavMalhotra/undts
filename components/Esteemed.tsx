@@ -14,7 +14,7 @@ import Container from './Container';
 export default function Esteemed() {
     return (
         <Container className="">
-            <h1 className="text-2xl text-center md:text-4xl" >
+            <h1 className="text-2xl text-center mb-8 md:text-4xl" >
                 Our Esteem Clients
             </h1>
 

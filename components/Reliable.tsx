@@ -21,28 +21,28 @@ function Reliable() {
 
             </div>
 
-            <section className="grid items-center grid-cols-2 gap-4 align-middle  md:w-3/5 md:grid-cols-2">
+            <section className="grid items-center grid-cols-2 gap-8 align-middle md:w-3/5 md:grid-cols-2">
                 <div className="">
                     <IoHelpBuoyOutline className="w-6 h-auto md:w-8 text-[#8F2D26]" />
-                    <h4 className="font-bold text-[#8F2D26]">Safety</h4>
+                    <h4 className="font-bold text-[#8F2D26] my-2">Safety</h4>
                     <p>We prioritise safety across all our services </p>
                 </div>
 
                 <div className="">
                     <PiDropBold className="w-6 h-auto md:w-8 text-[#8F2D26]" />
-                    <h4 className="font-bold text-[#8F2D26]">Environment Safe</h4>
+                    <h4 className="font-bold text-[#8F2D26] my-2">Environment Safe</h4>
                     <p>We prioritise safety across all our services </p>
                 </div>
 
                 <div>
                     <IoMdAlarm className="w-6 h-auto md:w-8 text-[#8F2D26]" />
-                    <h4 className="font-bold text-[#8F2D26]">On Schedule</h4>
+                    <h4 className="font-bold text-[#8F2D26] my-2">On Schedule</h4>
                     <p>We prioritise safety across all our services </p>
                 </div>
 
                 <div>
                     <IoDiamondOutline className="w-6 h-auto md:w-8 text-[#8F2D26]" />
-                    <h4 className="font-bold text-[#8F2D26]">Under Budget</h4>
+                    <h4 className="font-bold text-[#8F2D26] my-2">Under Budget</h4>
                     <p>We prioritise safety across all our services </p>
                 </div>
 

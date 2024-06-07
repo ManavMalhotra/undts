@@ -10,23 +10,23 @@ import Carousel from './Carousel';
 function ReliableCompany() {
     return (
         <Container className="">
-            <section className="flex flex-col items-center text-left  ">
+            <section className="flex flex-col items-center text-left ">
                 <h1 className="text-2xl md:text-4xl" >What do our client have to say ?</h1>
 
-                <p className='pt-4'>We prioritise safety across all our services</p>
+                <p className='pt-4 mb-8'>We prioritise safety across all our services</p>
             </section>
-            <Carousel>
-                <div className="embla__slide">
+            <div className='flex justify-between gap-8 px-4'>
+                <div className="">
                     <ClientCard name={"Shrikant Madhav Vaidya"} designation={"CEO"} company={"Indian Oil"} />
                 </div>
-                <div className="embla__slide">
+                <div className="">
                     <ClientCard name={"Shrikant Madhav Vaidya"} designation={"CEO"} company={"Indian Oil"} />
                 </div>
-                <div className="embla__slide">
+                <div className="">
                     <ClientCard name={"Shrikant Madhav Vaidya"} designation={"CEO"} company={"Indian Oil"} />
                 </div>
 
-            </Carousel>
+            </div>
         </Container>
 
     )

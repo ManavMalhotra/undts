@@ -55,7 +55,7 @@ const FormComponent = () => {
                 {/* Left Side */}
                 <div className="mb-8 md:w-2/5 md:mb-0">
                     <h2 className="mb-4 md:text-5xl text-2xl">We are here to help you get started</h2>
-                    <p className="mb-4 md:text-lg text-xs">Select the interested services* below:</p>
+                    <p className="mb-4 md:text-lg text-xs">Select the interested services <span className='imp'><p>*</p></span> below:</p>
                     <ul className="space-y-2">
                         {services.map(service => (
                             <div className='flex gap-2' key={service}>
@@ -84,7 +84,7 @@ const FormComponent = () => {
                             {/* Full Name */}
                             <div>
                                 <label htmlFor="fullName" className="block font-medium text-gray-700">
-                                    Full Name*
+                                    Full Name<span className='imp'><p>*</p></span>
                                 </label>
                                 <input
                                     type="text"
@@ -103,7 +103,7 @@ const FormComponent = () => {
                             {/* Email */}
                             <div>
                                 <label htmlFor="email" className="block font-medium text-gray-700">
-                                    Email Id*
+                                    Email Id<span className='imp'>*</span>
                                 </label>
                                 <input
                                     type="email"
@@ -122,7 +122,7 @@ const FormComponent = () => {
                             {/* Country */}
                             <div>
                                 <label htmlFor="country" className="block font-medium text-gray-700">
-                                    Country*
+                                    Country<span className='imp'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -141,7 +141,7 @@ const FormComponent = () => {
                             {/* Phone Number */}
                             <div>
                                 <label htmlFor="phoneNumber" className="block font-medium text-gray-700">
-                                    Phone Number*
+                                    Phone Number<span className='imp'><p>*</p></span>
                                 </label>
                                 <div className="flex items-center border border-gray-300 rounded-md shadow-sm focus-within:ring-red-500 focus-within:border-red-500">
                                     <PhoneInput
@@ -165,7 +165,7 @@ const FormComponent = () => {
                             {/* Company */}
                             <div>
                                 <label htmlFor="company" className="block font-medium text-gray-700">
-                                    Company*
+                                    Company<span className='imp'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -184,7 +184,7 @@ const FormComponent = () => {
                             {/* Industry */}
                             <div>
                                 <label htmlFor="industry" className="block font-medium text-gray-700">
-                                    Industry*
+                                    Industry<span className='imp'>*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -204,7 +204,7 @@ const FormComponent = () => {
                         {/* Requirement */}
                         <div>
                             <label htmlFor="requirement" className="block font-medium text-gray-700">
-                                Requirement*
+                                Requirement<span className='imp'>*</span>
                             </label>
                             <textarea
                                 id="requirement"

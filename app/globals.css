@@ -126,3 +126,9 @@ input[type="checkbox"] {
     transform: translateX(-100%);
   }
 }
+
+.imp > p{
+  display: inline-block;
+  color: #8f2d26;
+  font-size: 2rem;
+}
