@@ -55,7 +55,7 @@ const FormComponent = () => {
                 {/* Left Side */}
                 <div className="mb-8 md:w-2/5 md:mb-0">
                     <h2 className="mb-4 md:text-5xl text-2xl">We are here to help you get started</h2>
-                    <p className="mb-4 md:text-lg text-xs">Select the interested services <span className='imp'><p>*</p></span> below:</p>
+                    <p className="mb-4 md:text-lg text-xs">Select the interested services <span className="text-red-500 imp">&#42;</span> below:</p>
                     <ul className="space-y-2">
                         {services.map(service => (
                             <div className='flex gap-2' key={service}>
@@ -141,7 +141,7 @@ const FormComponent = () => {
                             {/* Phone Number */}
                             <div>
                                 <label htmlFor="phoneNumber" className="block font-medium text-gray-700">
-                                    Phone Number<span className='imp'><p>*</p></span>
+                                    Phone Number<span className="text-red-500 imp">&#42;</span>
                                 </label>
                                 <div className="flex items-center border border-gray-300 rounded-md shadow-sm focus-within:ring-red-500 focus-within:border-red-500">
                                     <PhoneInput

@@ -84,7 +84,20 @@ h2 {
   font-family: var(--font-eb-garamond);
 }
 
+nav ul li {
+}
+
 a[data-active] {
+  color: #8f2d26;
+  font-weight: 600;
+}
+
+nav ul li a:not([data-active]) {
+  color: #4a4a4a;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:not([data-active]):hover {
   color: #8f2d26;
 }
 
@@ -127,8 +140,10 @@ input[type="checkbox"] {
   }
 }
 
-.imp > p{
+.imp > p {
   display: inline-block;
   color: #8f2d26;
   font-size: 2rem;
 }
+
+/* locomotive-scroll.css */
