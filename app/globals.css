@@ -129,6 +129,8 @@ input[type="checkbox"] {
 .marquee-item {
   flex: 0 0 20vw;
   margin: 0 1vw;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes scrolling {
