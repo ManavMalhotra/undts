@@ -13,7 +13,7 @@ function OurServices() {
     ];
 
     return (
-        <Container className="gap-4 md:px-16 md:flex-row">
+        <Container className="gap-4 md:px-16 md:flex-row" id='our-services'>
             <h1 className="text-3xl text-center font-[--font-eb-garamond] md:text-4xl mb-8" >Our Services</h1>
             <section className="grid grid-cols-1 gap-4 py-8 md:grid-cols-3 md:gap-y-16 ">
                 {services.map((service, index) => (

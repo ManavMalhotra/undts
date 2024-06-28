@@ -23,12 +23,24 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const pathName = usePathname();
+  const path = usePathname()
+
+  // const router = usePathname(); 
+
+  const links = [
+    { href: "/", label: "Home" },
+    { href: "#our-services", label: "Services" },
+    { href: "#projects", label: "Projects" },
+    { href: "#about-us", label: "About us" },
+  ];
+
+  console.log(path);
+
 
   return (
     <header className="flex items-center justify-between col-span-4 my-8 md:col-span-8">
@@ -43,82 +55,26 @@ const Navbar = () => {
           height={40}
         />
       </Link>
-      <div className="hidden gap-8 md:flex">
-
-        <NavigationMenu>
-          <NavigationMenuList>
-            {/* Home  */}
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                href="/"
-                className={`font-bold ${navigationMenuTriggerStyle()} `}
-                active={pathName === "/"}
-              >
-                Home
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            {/* Services  */}
-            <NavigationMenuItem className="hover:bg-none">
-              <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} text-base`}
-                href="/services"
-                active={pathName === "/services"}
-              >
-
-                Services
-              </NavigationMenuLink>
-
-              {/* <NavigationMenuTrigger className="text-base ">Services</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="flex flex-col gap-3 p-6 md:w-[200px] lg:w-[300px] text list-disc">
-                  <li className="">
-                    <NavigationMenuLink asChild>
-                      <Link href="/" legacyBehavior passHref>
-                        <a>Corrosion Prevention</a>
-                      </Link>
-                    </NavigationMenuLink>
-                  </li>
-                  <li>
-                    <NavigationMenuLink asChild>
-                      <Link href="/" legacyBehavior passHref>
-                        <a>Coating Inspection</a>
-                      </Link>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent> */}
-            </NavigationMenuItem>
-
-            {/* Projects  */}
-            <NavigationMenuItem>
-              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-base`}
-                href="/projects"
-                active={pathName === "/projects"}
-              >
-                Projects
-              </NavigationMenuLink>
-              {/* <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  Temp
-                </ul>
-              </NavigationMenuContent> */}
-            </NavigationMenuItem>
-
-            {/* About Us */}
-            <NavigationMenuItem>
-              <NavigationMenuLink className={`${navigationMenuTriggerStyle()} text-base`}
-                href="/about-us"
-                active={pathName === "/about-us"}
-              >
-                About Us
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+      <div className="hidden gap-8 md:flex ">
+        <div className="flex">
+          <ul className="flex items-center justify-center flex-1 space-x-1 list-none group">
+            {links.map((link, index) => (
+              <li key={index}>
+                <Link href={link.href}
+                  aria-current={path === link.href ? "page" : undefined}
+                  className="inline-flex items-center justify-center h-10 px-4 py-2 text-base font-medium font-bold transition-colors rounded-md hov: group w-max"
+                  {...(path === link.href && { 'data-active': true })}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
         <Link href="#contact-us" className="px-4 py-2 text-lg text-white bg-black rounded-full">Contact Us</Link>
       </div>
 
-
+      {/* mobile Menu  */}
       <div className="flex gap-4 md:hidden">
         <Link href="#contact-us" className="px-4 py-2 text-base text-white bg-black rounded-full">Contact Us</Link>
         <button onClick={() => setIsOpen(!isOpen)}>
@@ -205,7 +161,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </header>
+    </header >
   );
 };
 
