@@ -13,17 +13,17 @@ import Container from './Container';
 
 export default function Hero() {
     return (
-        <Container className="text-center">
-            <section className="mb-16">
+        <Container className="text-center pt-0">
+            <section className="mb-8">
                 <h3 className="text-base">Since 1990</h3>
-                <h1 className="text-4xl md:text-6xl md:px-64">
+                <h1 className="text-[1.8rem] leading-10 md:text-6xl md:px-64">
                     India's most reliable corrosion prevention service company
                 </h1>
             </section>
             <Carousel>
-                <div className="relative embla__slide">
+                <div className="embla__slide rounded-2xl">
                     <Image src={project1} alt="project1" layout="responsive" />
-                    <section className="top-[1vw] left-[1vw] absolute flex-row items-start justify-between hidden w-full max-w-xs px-4 py-4 text-left bg-white shadow-lg md:flex rounded-2xl">
+                    {/* <section className="top-[1vw] left-[1vw] absolute flex-row items-start justify-between hidden w-full max-w-xs px-4 py-4 text-left bg-white shadow-lg md:flex rounded-2xl">
                         <div className="">
                             <h1 className="text-2xl">Project Name</h1>
                             <p className="mt-2 text-sm">
@@ -33,12 +33,12 @@ export default function Hero() {
                         <div className="mt-4 sm:ml-4 sm:mt-0">
                             <FaCircleArrowRight className="w-6 h-6 text-red-700" />
                         </div>
-                    </section>
+                    </section> */}
                 </div>
-                <div className="embla__slide">
+                <div className="embla__slide rounded-2xl ">
                     <Image src={project2} alt="project2" layout="responsive" />
                 </div>
-                <div className="embla__slide">
+                <div className="embla__slide rounded-2xl">
                     <Image src={project3} alt="project3" layout="responsive" />
                 </div>
             </Carousel>

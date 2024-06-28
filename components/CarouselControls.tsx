@@ -10,7 +10,7 @@ type Props = {
 };
 const CarouselControls = (props: Props) => {
   return (
-    <div className="flex justify-end gap-4 ">
+    <div className=" justify-end gap-4 hidden md:flex">
       <button
         onClick={() => {
           if (props.canScrollPrev) {

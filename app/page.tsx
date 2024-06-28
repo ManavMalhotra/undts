@@ -9,7 +9,6 @@ import Statistics from "@/components/Statistics";
 import ReliableCompany from "@/components/ReliableCompany";
 import Form from "@/components/Form";
 
-
 export default function page() {
 
   // useEffect(() => {

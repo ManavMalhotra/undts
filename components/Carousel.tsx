@@ -41,7 +41,7 @@ const Carousel = ({ children, ...options }: Props) => {
                 <div className="embla__container">
                     {children}
                 </div>
-                <div className="flex justify-between md:mx-16 w-[inherit] items-center">
+                <div className="flex justify-center md:justify-between md:mx-16 w-[inherit] items-center mt-4 md:mt-0 ">
                     <Dots itemsLength={length} selectedIndex={selectedIndex} />
                     <CarouselControls
                         canScrollNext={canScrollNext}
@@ -72,7 +72,7 @@ const Dots = ({ itemsLength, selectedIndex }: DotProps) => {
                 return (
                     <div
                         className={classNames({
-                            "h-2 w-2 rounded-full transition-all duration-300 bg-black mx-1":
+                            "h-2 w-2 rounded-full transition-all duration-300 bg-[#8F2D26] mx-1":
                                 true,
                             // tune down the opacity if slide is not selected
                             "opacity-50": !selected,

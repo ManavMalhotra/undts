@@ -13,7 +13,7 @@ const ClientCard = ({
 }: ClientCardProps
 ) => {
     return (
-        <div className="flex flex-col px-8 py-8 bg-pink-50 gap-4 rounded-2xl max-w-[600px] w-full pb-[0.8rem]">
+        <div className="flex flex-col  px-4 py-6 md:px-8 md:py-8 bg-pink-50 gap-4 rounded-2xl max-w-[600px] w-full pb-[0.8rem]">
             <div className="flex justify-between">
                 <div className="w-12 h-12 bg-gray-700 rounded-full"></div>
                 <div className="text-right">
@@ -24,7 +24,7 @@ const ClientCard = ({
             <p className="text-left">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugiat expedita neque perferendis. Incidunt sed omnis illo modi, blanditiis itaque.
             </p>
-            <div className="my-4">
+            <div className="md:my-4">
                 <Link href="/project" className="flex items-center text-red-800">
                     <p>View Projects </p>
                     <MdArrowRight />
