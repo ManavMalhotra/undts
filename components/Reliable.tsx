@@ -5,6 +5,7 @@ import { IoDiamondOutline, IoHelpBuoyOutline } from 'react-icons/io5'
 import { MdArrowRight } from 'react-icons/md'
 import { PiDropBold } from 'react-icons/pi'
 import Container from './Container'
+import Link from 'next/link'
 
 function Reliable() {
     return (
@@ -14,10 +15,12 @@ function Reliable() {
                 <h1 className="font-[--font-eb-garamond] text-2xl md:text-4xl">
                     What makes us reliable company ?
                 </h1>
-                <div className="items-center hidden text-red-800 md:flex md:gap-2">
-                    <h1>Schedule free consultation </h1>
-                    <FaArrowRightLong className="w-4 h-4" />
-                </div>
+                <Link href="#contact-us">
+                    <div className="items-center hidden text-red-800 md:flex md:gap-2">
+                        <h1>Schedule free consultation </h1>
+                        <FaArrowRightLong className="w-4 h-4" />
+                    </div>
+                </Link>
 
             </div>
 
@@ -46,10 +49,14 @@ function Reliable() {
                     <p>We prioritise safety across all our services </p>
                 </div>
 
-                <div className="col-span-2 gap-4 flex items-center text-[#8F2D26] md:hidden">
-                    <h1>Schedule free consultation </h1>
-                    <FaArrowRightLong color='#8F2D26' />
-                </div>
+                <Link href="#contact-us">
+                    <div className="col-span-2 gap-4 flex items-center text-[#8F2D26] md:hidden">
+                        <h1>Schedule free consultation </h1>
+                        <FaArrowRightLong className="w-4 h-4" />
+                    </div>
+                </Link>
+
+
             </section>
 
         </Container>
