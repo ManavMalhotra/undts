@@ -36,7 +36,7 @@ const Navbar = () => {
     { href: "/", label: "Home" },
     { href: "#our-services", label: "Services" },
     { href: "#projects", label: "Projects" },
-    { href: "#about-us", label: "About us" },
+    { href: "/about-us", label: "About us" },
   ];
 
   console.log(path);
