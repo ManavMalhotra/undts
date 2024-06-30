@@ -27,7 +27,7 @@ export default function Footer() {
                             <h6 className="underline">info@udts.com</h6>
                         </Link>
                     </div>
-                    <p className='mt-4 text-nowrap'>© Copyright UNDTS. All Rights Reserved</p>
+                    <p className='mt-8 text-nowrap'>© Copyright UNDTS. All Rights Reserved</p>
                 </section>
                 <section className='hidden md:block md:col-span-1'></section>
                 <section className='col-span-4 md:col-span-2 '>
@@ -40,7 +40,7 @@ export default function Footer() {
                         <li className="font-semibold">Coating Inspection</li>
                         <li className="font-semibold">Coating Inspection</li>
                     </ul>
-                    <div className='flex gap-2 mt-4'>
+                    <div className='flex gap-2 mt-8'>
                         <h3 className='text-[#8F2D26] '>Address:</h3>
                         <p className='text-wrap md:text-nowrap '>29D, B-9/8, Sector–62, Distt. G.B. Nagar, Noida, UP</p>
                     </div>
@@ -108,6 +108,7 @@ export default function Footer() {
                         </Link>
                     </div>
                 </section>
+                
                 <p className='mx-auto mt-4 text-nowrap'>© Copyright UNDTS. All Rights Reserved</p>
 
 
