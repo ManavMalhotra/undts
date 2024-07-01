@@ -49,7 +49,7 @@ const Navbar = () => {
         <Image
           src={logo}
           alt="undts logo"
-          className="w-24"
+          className="w-[78px]"
           priority={true}
           width={80}
           height={40}

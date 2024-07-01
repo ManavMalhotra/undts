@@ -12,8 +12,8 @@ export default function Footer() {
             <footer className='hidden md:grid-cols-8 grid-cols-4 col-span-4 md:col-span-8 bg-[#FFEEED] md:px-16 px-4 py-8 md:grid'>
 
                 <section className='flex flex-col justify-between col-span-4 md:col-span-2'>
-                    <Image src={logo} alt='undts logo' className='w-24' priority={true} width={80} height={40} />
-                    <p>India’s most reliable corrosion prevention service company</p>
+                <Image src={logo} alt='undts logo' className='w-[78px]' priority={true} width={80} height={40} />
+                <p>India’s most reliable corrosion prevention service company</p>
                     <div className="flex gap-4 justify-normal">
                         <FaInstagram size={24} color='#8F2D26' />
                         <FaLinkedin size={24} color='#8F2D26' />
@@ -92,7 +92,7 @@ export default function Footer() {
                 </div>
 
                 <section className='flex flex-col justify-between col-span-4 gap-2 md:col-span-2'>
-                    <Image src={logo} alt='undts logo' className='w-24' priority={true} width={80} height={40} />
+                    <Image src={logo} alt='undts logo' className='w-[78px]' priority={true} width={80} height={40} />
                     <p>India’s most reliable corrosion prevention service company</p>
                     <div className="flex gap-4 justify-normal">
                         <FaInstagram size={24} color='#8F2D26' />
