@@ -14,7 +14,11 @@ type Props = PropsWithChildren & EmblaOptionsType;
 
 const Carousel = ({ children, ...options }: Props) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(
-        options, [Autoplay()]
+        options, [
+        // @ts-ignore
+        Autoplay()
+    ]
+
     );
 
     // need to selectedIndex to allow this component to re-render in react.
