@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '@/components/Container'
 import Image from 'next/image'
-import project1 from "@/app/Imageproject1.png"
+import office from "@/public/images/undts_office.png"
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -9,12 +9,12 @@ function page() {
     return (
 
         <Container>
-            <section className='flex justify-between'>
-                <div className='flex-1'><h1 className='text-4xl'>About Us</h1></div>
-                <div className='flex-1'><p>We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.</p></div>
+            <section className='flex justify-between flex-col md:flex-row'>
+                <div className='flex-1'><h1 className='md:text-6xl text-2xl'>About Us</h1></div>
+                <div className='flex-1'><p className='md:text-xl text-sm'>We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.</p></div>
             </section>
             <section className='flex flex-col gap-16 my-16'>
-                <Image src={project1} alt="project1" layout="responsive" />
+                <Image src={office} alt="project1" layout="responsive" />
                 <div className='w-1/2'>
                     <p>We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.</p>
                 </div>
@@ -22,7 +22,7 @@ function page() {
             <section className='' >
                 <div className='bg-[#8F2D26] px-8 py-6 md:p-12 flex flex-col md:flex-row  rounded-3xl justify-between md:items-center text-white gap-4'>
                     <div className='flex flex-col gap-6 md:w-1/2'>
-                        <p className='font-normal'>
+                        <p className='font-normal text-xl'>
                             We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.
                         </p>
                         <div className='flex flex-row gap-4 md:flex-row'>

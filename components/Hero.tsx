@@ -14,7 +14,7 @@ import Container from './Container';
 export default function Hero() {
     return (
         <Container className="text-center pt-0">
-            <section className="mb-4">
+            <section className="mb-16">
                 <h3 className="text-base mb-4">Since 1990</h3>
                 <h1 className="text-[1.8rem] leading-10 md:text-6xl md:px-64">
                     India's most reliable corrosion prevention service company

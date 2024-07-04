@@ -8,6 +8,7 @@ import OurServices from "@/components/OurServices";
 import Statistics from "@/components/Statistics";
 import ReliableCompany from "@/components/ReliableCompany";
 import Form from "@/components/Form";
+import Gallery from "@/components/Gallery";
 
 export default function page() {
 
@@ -41,6 +42,8 @@ export default function page() {
       <Esteemed />
       {/* Our Services */}
       <OurServices />
+      {/* Gallery  */}
+      <Gallery />
       {/* Statistics */}
       <Statistics />
       {/* Reliable Company */}
