@@ -30,12 +30,10 @@ const Navbar = () => {
 
   const path = usePathname()
 
-  // const router = usePathname(); 
-
   const links = [
     { href: "/", label: "Home" },
-    { href: "#our-services", label: "Services" },
-    { href: "#projects", label: "Projects" },
+    { href: "/#our-services", label: "Services" },
+    { href: "/#projects", label: "Projects" },
     { href: "/about-us", label: "About us" },
   ];
 
