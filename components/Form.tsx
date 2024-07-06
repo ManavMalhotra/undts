@@ -5,8 +5,11 @@ import axios from 'axios';
 import Container from './Container';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
+import { useRef } from 'react';
 
 const FormComponent = () => {
+    const form = useRef(null);
+
     const formik = useFormik({
         initialValues: {
             fullName: '',
@@ -16,7 +19,6 @@ const FormComponent = () => {
             company: '',
             industry: '',
             requirement: '',
-            updates: false,
             services: [],
         },
         validationSchema: Yup.object({
@@ -30,8 +32,28 @@ const FormComponent = () => {
         }),
         onSubmit: async (values) => {
             try {
-                await axios.post('/api/form', values);
-                console.log(values)
+                let data = new FormData();
+                // Check if values is not empty and is an object
+                if (values && typeof values === 'object') {
+                    // Iterate over the values object and append each key-value pair to the FormData
+                    Object.keys(values).forEach(key => {
+                        // @ts-ignore
+                        data.append(key, values[key]);
+                    });
+                }
+
+                const action = "https://script.google.com/macros/s/AKfycbx0XnlydMtXtKUpGk5xJgoggmB05I3TePL7yRj_0yaUa3uaO6vlIpbQmx3OaT3d19jb8Q/exec";
+
+                console.log(data);
+                console.log("values", values);
+
+                // Send the FormData object
+                await fetch(action, {
+                    method: "POST",
+                    body: data
+                });
+
+                console.log(data);
                 alert('Form submitted successfully!');
             } catch (error) {
                 console.error('Error submitting form', error);
@@ -79,7 +101,9 @@ const FormComponent = () => {
 
                 {/* Right Side */}
                 <div className="md:w-3/5">
-                    <form onSubmit={formik.handleSubmit} className="space-y-4">
+                    <form
+                        ref={form}
+                        onSubmit={formik.handleSubmit} className="space-y-4">
                         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                             {/* Full Name */}
                             <div>
@@ -230,6 +254,7 @@ const FormComponent = () => {
                                 name="updates"
                                 type="checkbox"
                                 onChange={formik.handleChange}
+                                // @ts-ignore
                                 checked={formik.values.updates}
                                 className="w-4 h-4 text-red-600 border-gray-300 rounded"
                             />
@@ -249,7 +274,7 @@ const FormComponent = () => {
                     </form>
                 </div>
             </div>
-        </Container>
+        </Container >
     );
 };
 
