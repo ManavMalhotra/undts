@@ -11,7 +11,10 @@ import about6 from "@/public/images/about6.png";
 function Gallery() {
     return (
         <Container>
-            <section className='grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-4 '>
+            <h1 className="mb-8 text-2xl text-center md:text-4xl" >
+                Project Media
+            </h1>
+            <section className='grid grid-cols-1 grid-rows-1 gap-4 py-8 md:grid-cols-3 '>
                 <div className='w-full '>
                     <Image src={about1} alt="about1" className='rounded-[20px]' />
                 </div>
