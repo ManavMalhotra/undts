@@ -28,25 +28,25 @@ function Reliable() {
                 <div className="">
                     <IoHelpBuoyOutline className="w-6 h-auto md:w-8 text-[#8F2D26]" />
                     <h4 className="font-bold text-[#8F2D26] my-2">Safety</h4>
-                    <p>We prioritise safety across all our services </p>
+                    <p>We prioritize safety with advanced methods that minimize risks to your operations and personnel.</p>
                 </div>
 
                 <div className="">
                     <PiDropBold className="w-6 h-auto md:w-8 text-[#8F2D26]" />
                     <h4 className="font-bold text-[#8F2D26] my-2">Environment Safe</h4>
-                    <p>We prioritise safety across all our services </p>
+                    <p>Our eco-friendly practices ensure effective corrosion prevention while protecting the environment. </p>
                 </div>
 
                 <div>
                     <IoMdAlarm className="w-6 h-auto md:w-8 text-[#8F2D26]" />
                     <h4 className="font-bold text-[#8F2D26] my-2">On Schedule</h4>
-                    <p>We prioritise safety across all our services </p>
+                    <p>We deliver services promptly, meeting deadlines without compromising on quality. </p>
                 </div>
 
                 <div>
                     <IoDiamondOutline className="w-6 h-auto md:w-8 text-[#8F2D26]" />
                     <h4 className="font-bold text-[#8F2D26] my-2">Under Budget</h4>
-                    <p>We prioritise safety across all our services </p>
+                    <p>Our cost-effective solutions keep your operations within budget, avoiding unexpected expenses. </p>
                 </div>
 
                 <Link href="#contact-us">
