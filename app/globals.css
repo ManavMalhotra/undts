@@ -79,6 +79,12 @@
   font-family: var(--font-raleway);
 }
 
+html, body{
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important;
+  }
+
+
 h1,
 h2 {
   font-family: var(--font-eb-garamond);

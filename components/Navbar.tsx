@@ -39,7 +39,7 @@ const Navbar = () => {
 
   console.log(path);
 
-
+  
   return (
     <header className="flex items-center justify-between col-span-4 my-8 md:col-span-8">
       {/* logo  */}
