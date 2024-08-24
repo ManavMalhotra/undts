@@ -10,12 +10,12 @@ import Carousel from './Carousel';
 function ReliableCompany() {
     return (
         <Container className="">
-            <section className="flex  flex-col items-center text-left ">
-                <h1 className="text-2xl md:text-4xl" >What do our client have to say ?</h1>
+            <section className="flex flex-col items-center mb-8 text-left ">
+                <h1 className="text-2xl md:text-4xl" >Testimonials</h1>
 
-                <p className='pt-4 mb-8'>We prioritise safety across all our services</p>
+                {/* <p className='pt-4 '>We prioritise safety across all our services</p> */}
             </section>
-            <div className='flex flex-wrap md:flex-nowrap justify-between gap-8 px-4'>
+            <div className='flex flex-wrap justify-between gap-8 px-4 md:flex-nowrap'>
                 <div className="">
                     <ClientCard name={"Shrikant Madhav Vaidya"} designation={"CEO"} company={"Indian Oil"} />
                 </div>

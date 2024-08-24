@@ -36,16 +36,16 @@ export default function page() {
     <>
       {/* Hero Section */}
       <Hero />
+      {/* Our Services */}
+      <OurServices />
+      {/* Statistics */}
+      <Statistics />
       {/* Reliable Section */}
       <Reliable />
       {/* Our Esteemed Clients */}
       <Esteemed />
-      {/* Our Services */}
-      <OurServices />
       {/* Gallery  */}
-      <Gallery />
-      {/* Statistics */}
-      <Statistics />
+      {/* <Gallery /> */}
       {/* Reliable Company */}
       <ReliableCompany />
       {/* Help you get started */}
