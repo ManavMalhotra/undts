@@ -13,6 +13,7 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import ImageGallery from '@/components/ImageGallery';
+import Banner from '@/components/Banner';
 
 
 function page() {
@@ -241,25 +242,10 @@ function page() {
     return (
 
         <Container>
-            <section className='flex flex-col justify-between md:flex-row'>
+            <section className='flex flex-col justify-between gap-4 md:flex-row'>
                 <div className='flex-1'><h1 className='text-2xl md:text-6xl'>Portfolio</h1></div>
                 <div className='flex-1'><p className='text-sm md:text-xl'>We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.</p></div>
             </section>
-
-            {/* <div className="App">
-                <LightGallery
-                    onInit={onInit}
-                    speed={500}
-                    plugins={[lgThumbnail, lgZoom]}
-                >
-                    <a href="/images/about1.png">
-                        <img alt="img1" src="/images/about1.png" />
-                    </a>
-                    <a href="/images/about1.png">
-                        <img alt="img2" src="/images/about1.png" />
-                    </a>
-                </LightGallery>
-            </div> */}
 
             <div className='my-12'>
                 <ImageGallery
@@ -269,7 +255,7 @@ function page() {
             </div>
 
 
-            <section className='' >
+            {/* <section className='' >
                 <div className='bg-[#8F2D26] px-8 py-6 md:p-12 flex flex-col md:flex-row  rounded-3xl justify-between md:items-center text-white gap-4'>
                     <div className='flex flex-col gap-6 md:w-1/2'>
                         <p className='text-xl font-normal'>
@@ -289,7 +275,10 @@ function page() {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section> */}
+
+            <Banner title="Site Survey Experts" description="We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields." />
+
         </Container>
 
     )

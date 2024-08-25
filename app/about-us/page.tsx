@@ -11,7 +11,7 @@ function page() {
     return (
 
         <Container>
-            <section className='flex flex-col justify-between md:flex-row'>
+            <section className='flex flex-col justify-between gap-4 md:flex-row'>
                 <div className='flex-1'><h1 className='text-2xl md:text-6xl'>About Us</h1></div>
                 <div className='flex-1'><p className='text-sm md:text-xl'>Founded in 1984, UNDTS has established itself as a leader in corrosion prevention services for the oil refinery industry. With decades of experience, we have built tremendous value for our clients through our commitment to safety, innovation, and quality.</p></div>
             </section>
@@ -22,20 +22,20 @@ function page() {
                 </div>
             </section>
 
-            <div className="container px-4 py-8 mx-auto">
-                <div className="flex flex-col items-center justify-between gap-16 lg:flex-row lg:items-start">
-                    <div className="mb-6 w-[500px] h-[350px] lg:w-1/3 lg:mb-0">
+            <div className="px-4 py-8 mx-auto my-16 md:my-24">
+                <div className="flex flex-col items-center justify-between gap-16 md:gap-28 lg:flex-row lg:items-start">
+                    <div className="w-full lg:h-[350px] lg:w-1/2">
                         <Image src={founder} alt="Founder"
-                            layout="responsive" 
+                            layout="responsive"
                             className="w-full h-auto rounded-3xl"
                         />
                     </div>
-                    <div className="w-full lg:w-2/3 lg:pl-8">
+                    <div className="lg:w-1/2">
                         <h2 className="mb-4 text-2xl font-normal md:text-5xl">A word from the Founder</h2>
                         <p className="mb-4 text-gray-700 md:text-[22px] ">
                             Our team of dedicated professionals leverages advanced technologies and eco-friendly practices to deliver reliable and cost-effective solutions. Whether it's soil resistivity measurements, supplying high-quality materials, or providing precise monitoring and surveying equipment.
                         </p>
-                        <p className="text-2xl text-gray-700">
+                        <p className="text-xl text-black md:text-2xl">
                             Write to me at: <span className="font-bold">nikhil@undts.com</span>
                         </p>
                     </div>

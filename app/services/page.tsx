@@ -109,12 +109,12 @@ function page() {
     return (
 
         <Container>
-            <section className='flex flex-col justify-between md:flex-row'>
+            <section className='flex flex-col justify-between gap-4 md:flex-row'>
                 <div className='flex-1'><h1 className='text-2xl md:text-6xl'>Services</h1></div>
                 <div className='flex-1'><p className='text-sm md:text-xl'>We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.</p></div>
             </section>
 
-            <section className="py-8">
+            <section className="my-24">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map((service, index) => (
                         <div key={index} className="p-6 bg-white rounded-lg ">
@@ -125,46 +125,29 @@ function page() {
                 </div>
             </section>
 
-            {/* <section className='bg-[#8F2D26] px-8 py-6 md:px-12 md:py-16 flex flex-col md:flex-row  rounded-3xl justify-between md:items-center text-white gap-4'>
-                <div className='flex flex-col gap-6 md:w-1/2'>
-                    <h1 className='text-2xl md:text-5xl'>Site Survey Equipments</h1>
-                    <p className='text-sm font-normal'>
-                        We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.
-                    </p>
-                </div>
-                <div className=''>
-                    <Link href="/#contact-us" className="flex items-center justify-center w-full gap-4 px-8 py-4 text-lg font-semibold text-black bg-white rounded-full">
-                        <h3 className='text-nowrap'>
-                            Contact Us
-                        </h3>
-                        <FaArrowRight />
-                    </Link>
-                </div>
-            </section> */}
-
-
 
             <Banner title="Site Survey Equipments" description="We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields." />
+
             <Accordion type="single" collapsible className="w-full bg-[#8F2D26] text-white relative bottom-[20px]">
                 <AccordionItem value="item-1" className='px-12 py-6'>
-                    <AccordionTrigger className='text-5xl'>Equipments</AccordionTrigger>
+                    <AccordionTrigger className='text-2xl md:text-5xl'>Equipments</AccordionTrigger>
                     <AccordionContent className='py-12'>
                         {
                             equipments.map((equipment, index) => (
-                                <div key={index} className="p-4  md:bg-white md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] rounded-lg mb-4">
-                                    <h4 className="text-2xl font-semibold">{equipment}</h4>
+                                <div key={index} className="p-4 rounded-xl  md:bg-white md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] mb-4">
+                                    <h4 className="text-lg font-semibold md:text-2xl">{equipment}</h4>
                                 </div>
                             ))
                         }
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2" className='px-12 py-6'>
-                    <AccordionTrigger className='text-5xl'>Survey Equipments</AccordionTrigger>
+                    <AccordionTrigger className='text-2xl md:text-5xl'>Survey Equipments</AccordionTrigger>
                     <AccordionContent className='py-12'>
                         {
                             surveyEquipments.map((equipment, index) => (
-                                <div key={index} className="p-4  md:bg-white md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] rounded-lg mb-4">
-                                    <h4 className="text-2xl font-semibold">{equipment}</h4>
+                                <div key={index} className="p-4 rounded-xl  md:bg-white md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] mb-4">
+                                    <h4 className="text-lg font-semibold md:text-2xl">{equipment}</h4>
                                 </div>
                             ))
                         }

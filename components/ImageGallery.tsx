@@ -16,7 +16,7 @@ import Image from 'next/image';
 const SkeletonLoader = () => (
     <>
         {[...Array(9)].map((_, index) => (
-            <div key={index} className="bg-gray-200 animate-pulse rounded-xl h-[340px] w-[480px]"></div>
+            <div key={index} className="bg-gray-200 animate-pulse rounded-xl w-full h-[340px] "></div>
         ))}
     </>
 );
@@ -68,7 +68,7 @@ export default function ImageGallery({ categories, images }: ImageGalleryProps) 
                     categories.map((cat, index) => (
                         <button
                             key={index}
-                            className={`text-2xl px-6 py-1  capitalize rounded-3xl ${category === cat ? 'bg-[#8F2D26] text-white' : 'bg-[#FFEEED] text-[#8F2D26]'}`}
+                            className={`text-sm md:text-2xl px-6 py-1  capitalize rounded-3xl ${category === cat ? 'bg-[#8F2D26] text-white' : 'bg-[#FFEEED] text-[#8F2D26]'}`}
                             onClick={() => handleFilterChange(cat)}
                         >
                             {cat}

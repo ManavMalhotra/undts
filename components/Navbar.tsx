@@ -112,20 +112,20 @@ const Navbar = () => {
             <div className="flex flex-col items-start gap-4">
               <ul className="flex flex-col gap-4">
                 <li className="font-semibold">
-                  <Link href="/">Projects</Link>
+                  <Link href="/services">Services</Link>
                 </li>
                 <li className="font-semibold">
-                  <Link href="/">Company</Link>
+                  <Link href="/portfolio">Portfolio</Link>
                 </li>
                 <li className="font-semibold">
-                  <Link href="/">Services</Link>
+                  <Link href="/about-us">About Us</Link>
                 </li>
-                <li className="font-semibold">
+                {/* <li className="font-semibold">
                   <Link href="/">Certifications</Link>
                 </li>
                 <li className="font-semibold">
                   <Link href="/">Careers</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -149,11 +149,8 @@ const Navbar = () => {
               </h5>
 
               <div className="flex gap-4 my-4 justify-evenly">
-                <FaInstagram size={24} />
                 <FaLinkedin size={24} />
                 <FaFacebook size={24} />
-                <FaXTwitter size={24} />
-                <FaYoutube size={24} />
               </div>
             </div>
           </div>

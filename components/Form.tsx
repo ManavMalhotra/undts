@@ -87,7 +87,7 @@ const FormComponent = ({ showDownload = true }: FormComponentProps) => {
                         showDownload &&
                         (<div className='mt-6 mb-12'>
                             <Link href="/" className="flex items-center justify-center w-full gap-4 px-8 py-4 text-lg font-semibold text-[#F4F4F4] bg-black rounded-full">
-                                <h3 className='text-2xl text-nowrap'>
+                                <h3 className='text-lg md:text-2xl text-nowrap'>
                                     Download Company Profile
                                 </h3>
                                 <FaArrowDown />

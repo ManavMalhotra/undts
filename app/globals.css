@@ -145,7 +145,7 @@ td {
 }
 
 @media (max-width: 768px) {
-  .image-grid {
+  .image-grid > div{
       grid-template-columns: 1fr;
   }
 }
