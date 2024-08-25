@@ -1,6 +1,8 @@
 import React from 'react'
 import { IoHelpBuoyOutline } from 'react-icons/io5'
 import Container from './Container'
+import { FaArrowDown, FaArrowRight } from 'react-icons/fa';
+import Link from 'next/link';
 
 function OurServices() {
     const services = [
@@ -23,8 +25,17 @@ function OurServices() {
                         <p>{service.description}</p>
                     </div>
                 ))}
+                <div className='grid-cols-3 '> </div>
+                <div className='grid-cols-3 px-6 mt-6 mb-12'>
+                    <Link href="/" className="flex items-center justify-center w-full gap-4 px-8 py-4 text-lg font-semibold text-white bg-[#8F2D26] rounded-full">
+                        <h3 className='text-2xl text-nowrap'>
+                            More Services
+                        </h3>
+                        <FaArrowRight />
+                    </Link>
+                </div>
             </section>
-        </Container>
+        </Container >
     )
 }
 

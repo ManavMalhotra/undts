@@ -13,8 +13,11 @@ function Banner({ title, description }: BannerProps) {
         <section
             className='relative bg-[#8F2D26] px-8 py-6 md:px-12 md:py-16 flex flex-col md:flex-row rounded-3xl justify-between md:items-center text-white gap-4 overflow-hidden'
             style={{
-                background: `radial-gradient(58.68% 58.9% at 75.52% 49.94%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%), 
-                url(/clients/imageproject1.png) lightgray 50% / cover no-repeat`,
+                // background: `radial-gradient(58.68% 58.9% at 75.52% 49.94%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%), 
+                // url(/clients/imageproject1.png) lightgray 50% / cover no-repeat`,
+
+                background: "radial-gradient(58.68% 58.9% at 75.52% 49.94%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), url(/image.png) lightgray 50% / cover no-repeat"
+
             }
             }
         >

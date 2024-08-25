@@ -5,6 +5,12 @@ import office from "@/public/images/undts_office.png"
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa6";
 import Banner from '@/components/Banner'
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
 
 function page() {
     const services = [
@@ -65,6 +71,41 @@ function page() {
         },
     ];
 
+    const equipments = [
+        "Pin Brazing with complete accessoriest",
+        "Soil resistively Meters with complete accessories",
+        "Data Logging, (Fluke 289 & Rishabh 12S) ",
+        "P.S.P Monitoring",
+        "Coating Conductance",
+        "Interference Survey",
+        "Pearson Holiday Detector Make TINKER & RAIȘOR, U.S.A(Four Set)",
+        "Multi Combination Meter Make M.C.Miller, U.S.A(One Set)",
+        "CIS & DCVG Survey for Gatherer One(GI) Make M.C.Miller. (One Set)",
+        "CIS & DCVG Survey for GX Make M.C.Miller(One Set)"
+    ]
+
+    const surveyEquipments = [
+        "CIPS Equipment",
+        "CAT Survey Equipment",
+        "Pipeline Defect Mapper (POM)",
+        "DCVG Survey Equipment",
+        "G-1 Data Logger",
+        "Pipe Locator / Pearson Survey Equipment",
+        "Soil Resistivity Meter",
+        "Current Interrupter",
+        "Pin Brazing Equipment",
+        "Holiday Detection Equipment",
+        "Multimeter",
+        "Megger",
+        "Data Logger",
+        "Clamp On Meter",
+        "Micro Ohm Meter",
+        "GPS Instrument"
+    ]
+
+
+
+
     return (
 
         <Container>
@@ -73,7 +114,7 @@ function page() {
                 <div className='flex-1'><p className='text-sm md:text-xl'>We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields.</p></div>
             </section>
 
-            <section className="container px-4 py-8 mx-auto my-24">
+            <section className="py-8">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map((service, index) => (
                         <div key={index} className="p-6 bg-white rounded-lg ">
@@ -100,8 +141,36 @@ function page() {
                     </Link>
                 </div>
             </section> */}
-            
+
+
+
             <Banner title="Site Survey Equipments" description="We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields." />
+            <Accordion type="single" collapsible className="w-full bg-[#8F2D26] text-white relative bottom-[20px]">
+                <AccordionItem value="item-1" className='px-12 py-6'>
+                    <AccordionTrigger className='text-5xl'>Equipments</AccordionTrigger>
+                    <AccordionContent className='py-12'>
+                        {
+                            equipments.map((equipment, index) => (
+                                <div key={index} className="p-4  md:bg-white md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] rounded-lg mb-4">
+                                    <h4 className="text-2xl font-semibold">{equipment}</h4>
+                                </div>
+                            ))
+                        }
+                    </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2" className='px-12 py-6'>
+                    <AccordionTrigger className='text-5xl'>Survey Equipments</AccordionTrigger>
+                    <AccordionContent className='py-12'>
+                        {
+                            surveyEquipments.map((equipment, index) => (
+                                <div key={index} className="p-4  md:bg-white md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] rounded-lg mb-4">
+                                    <h4 className="text-2xl font-semibold">{equipment}</h4>
+                                </div>
+                            ))
+                        }
+                    </AccordionContent>
+                </AccordionItem>
+            </Accordion>
         </Container>
 
     )
