@@ -11,17 +11,13 @@ function Reliable() {
     return (
         <Container className="flex flex-col gap-4 px-4 md:px-16 md:flex-row">
 
-            <div className="md:w-2/5 md:flex md:justify-between md:flex-col md:pr-8">
-                <h1 className="font-[--font-eb-garamond] text-2xl md:text-4xl">
+            <div className="md:w-2/5 md:flex md:flex-col md:pr-8 md:gap-6">
+                <h1 className="text-2xl md:text-4xl">
                     What makes us reliable company ?
                 </h1>
-                <Link href="#contact-us">
-                    <div className="items-center hidden text-red-800 md:flex md:gap-2">
-                        <h1>Schedule free consultation </h1>
-                        <FaArrowRightLong className="w-4 h-4" />
-                    </div>
-                </Link>
-
+                <p className="text-sm md:text-base">
+                    Quality and Industry practices that makes us a reliable company.
+                </p>
             </div>
 
             <section className="grid items-center grid-cols-2 gap-8 align-middle md:w-3/5 md:grid-cols-2">
@@ -48,14 +44,6 @@ function Reliable() {
                     <h4 className="font-bold text-[#8F2D26] my-2">Under Budget</h4>
                     <p>Our cost-effective solutions keep your operations within budget, avoiding unexpected expenses. </p>
                 </div>
-
-                <Link href="#contact-us">
-                    <div className="col-span-2 gap-4 flex items-center text-[#8F2D26] md:hidden">
-                        <h1>Schedule free consultation </h1>
-                        <FaArrowRightLong className="w-4 h-4" />
-                    </div>
-                </Link>
-
 
             </section>
 

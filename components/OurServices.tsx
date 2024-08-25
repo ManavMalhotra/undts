@@ -26,7 +26,7 @@ function OurServices() {
                     </div>
                 ))}
                 <div className='grid-cols-3 '> </div>
-                <div className='grid-cols-3 px-6 mt-6 mb-12'>
+                <div className='grid-cols-3 px-16 mt-6 mb-12'>
                     <Link href="/" className="flex items-center justify-center w-full gap-4 px-8 py-4 text-lg font-semibold text-white bg-[#8F2D26] rounded-full">
                         <h3 className='text-2xl text-nowrap'>
                             More Services

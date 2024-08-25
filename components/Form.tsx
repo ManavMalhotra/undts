@@ -109,7 +109,7 @@ const FormComponent = ({ showDownload = true }: FormComponentProps) => {
                                             formik.setFieldValue('services', formik.values.services.filter(s => s !== service));
                                         }
                                     }}
-                                    className="w-4 h-auto checkbox"
+                                    className="w-6 h-auto checkbox"
                                 />
                                 <p className='p-viewport'>{service}</p>
                             </div>
