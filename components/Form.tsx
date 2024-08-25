@@ -9,7 +9,11 @@ import { useRef } from 'react';
 import Link from 'next/link';
 import { FaArrowDown } from 'react-icons/fa6';
 
-const FormComponent = () => {
+interface FormComponentProps {
+    showDownload?: boolean;
+}
+
+const FormComponent = ({ showDownload = true }: FormComponentProps) => {
     const form = useRef(null);
 
     const formik = useFormik({
@@ -79,14 +83,17 @@ const FormComponent = () => {
                 {/* Left Side */}
                 <div className="mb-8 md:w-2/5 md:mb-0">
                     <h2 className="mb-4 text-2xl md:text-5xl">We are here to help you get started</h2>
-                    <div className='mt-6 mb-12'>
-                        <Link href="/" className="flex items-center justify-center w-full gap-4 px-8 py-4 text-lg font-semibold text-[#F4F4F4] bg-black rounded-full">
-                            <h3 className='text-2xl text-nowrap'>
-                                Download Company Profile
-                            </h3>
-                            <FaArrowDown />
-                        </Link>
-                    </div>
+                    {
+                        showDownload &&
+                        (<div className='mt-6 mb-12'>
+                            <Link href="/" className="flex items-center justify-center w-full gap-4 px-8 py-4 text-lg font-semibold text-[#F4F4F4] bg-black rounded-full">
+                                <h3 className='text-2xl text-nowrap'>
+                                    Download Company Profile
+                                </h3>
+                                <FaArrowDown />
+                            </Link>
+                        </div>)
+                    }
 
                     <p className="mb-4 text-xs md:text-lg">Select the interested services <span className="text-red-500 imp">&#42;</span> below:</p>
                     <ul className="space-y-2">

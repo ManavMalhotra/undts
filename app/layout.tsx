@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { EB_Garamond, Raleway, Lora } from "next/font/google"
+import { EB_Garamond, Raleway, Lora, Inter } from "next/font/google"
 
 import { cn } from "@/lib/utils"
 import Navbar from "@/components/Navbar";
@@ -15,6 +15,11 @@ const lora = Lora({
 const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
+})
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 })
 
 
@@ -51,7 +56,7 @@ export default function RootLayout({
 
       </head>
 
-      <body className={`${lora.variable} ${raleway.variable}`}>
+      <body className={`${lora.variable} ${raleway.variable} ${inter.variable} `}>
         <main className="grid grid-cols-4 gap-4 mx-4 md:grid-cols-8 md:mx-16">
           <Navbar />
           {children}

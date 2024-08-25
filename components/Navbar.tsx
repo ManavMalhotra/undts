@@ -69,7 +69,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <Link href="#contact-us" className="px-4 py-2 text-lg text-white bg-black rounded-full">Contact Us</Link>
+        <Link href="/contact-us" className="px-4 py-2 text-lg text-white bg-black rounded-full">Contact Us</Link>
       </div>
 
       {/* mobile Menu  */}
