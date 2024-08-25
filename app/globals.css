@@ -23,7 +23,9 @@ body {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
 }
-
+.raleway {
+  font-family: var(--font-raleway);
+}
 h1,
 h2 {
   font-family: var(--font-eb-garamond);
