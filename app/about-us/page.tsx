@@ -27,7 +27,7 @@ function page() {
                     <div className="mb-6 w-[500px] h-[350px] lg:w-1/3 lg:mb-0">
                         <Image src={founder} alt="Founder"
                             layout="responsive" 
-                            className="w-full h-auto rounded-lg"
+                            className="w-full h-auto rounded-3xl"
                         />
                     </div>
                     <div className="w-full lg:w-2/3 lg:pl-8">
