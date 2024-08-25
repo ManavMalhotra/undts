@@ -48,9 +48,9 @@ const Carousel = ({ children, ...options }: Props) => {
                 <div className="embla__container">
                     {children}
                 </div>
-                <div className="flex justify-center md:justify-between md:mx-16 w-[inherit] items-center mt-4 md:mt-0 ">
+                <div className="flex justify-center relative bottom-[11vw] md:bottom-[4vw] lg:bottom-[3vw] mx-auto md:mx-16 w-[inherit] items-center mt-4 md:mt-0 ">
                     <Dots itemsLength={length} selectedIndex={selectedIndex} />
-                    <CarouselControls
+                    {/* <CarouselControls
                         canScrollNext={canScrollNext}
                         canScrollPrev={canScrollPrev}
                         onNext={() => emblaApi?.scrollNext()}
@@ -59,7 +59,7 @@ const Carousel = ({ children, ...options }: Props) => {
                         options={options}
                         setSelectedIndex={setSelectedIndex}
                         className="z-10"
-                    />
+                    /> */}
                 </div>
             </div>
         </>
@@ -73,13 +73,13 @@ type DotProps = {
 const Dots = ({ itemsLength, selectedIndex }: DotProps) => {
     const arr = new Array(itemsLength).fill(0);
     return (
-        <div className="flex justify-center gap-1 md:my-2">
+        <div className="flex justify-center gap-1 p-2 rounded-xl md:my-2">
             {arr.map((_, index) => {
                 const selected = index === selectedIndex;
                 return (
                     <div
                         className={classNames({
-                            "h-2 w-2 rounded-full transition-all duration-300 bg-[#8F2D26] mx-1":
+                            "h-2 w-2 rounded-full transition-all duration-300 bg-white mx-1":
                                 true,
                             // tune down the opacity if slide is not selected
                             "opacity-50": !selected,

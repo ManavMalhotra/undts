@@ -21,31 +21,47 @@ export default function Hero() {
                 </h1>
             </section>
             <Carousel>
-                <div className="embla__slide rounded-2xl">
+                <div className="relative embla__slide rounded-2xl">
                     <Image src={project1} alt="project1" layout="responsive" />
-
-                    <section className="top-[1vw] left-[1vw] absolute flex-row items-start justify-between hidden w-[350px] max-w-xs px-4 py-4 text-left bg-[#8F2D26] text-white shadow-lg md:flex rounded-2xl
-                    
-                    ">
-                        <div className="">
+                    <section className="absolute hidden top-[1vw] left-[1vw] flex-row items-start justify-between w-[350px] max-w-xs px-4 py-4 text-left bg-[#8F2D26] text-white shadow-lg md:flex rounded-2xl">
+                        <div>
                             <div className='flex items-center gap-2 '>
                                 <FaLocationDot size={12} />
-                                <h1 className="text-xs font-bold raleway"> Hyderabad Airport</h1>
+                                <h1 className="text-xs font-bold raleway">Hyderabad Airport</h1>
                             </div>
                             <p className="mt-2 text-sm">
                                 Site Survey of We introduce ourselves as one of the reputed construction companies in India having registered.
                             </p>
                         </div>
-                        {/* <div className="mt-4 sm:ml-4 sm:mt-0">
-                            <FaCircleArrowRight className="w-6 h-6 text-red-700" />
-                        </div> */}
                     </section>
                 </div>
-                <div className="embla__slide rounded-2xl ">
+                <div className="relative embla__slide rounded-2xl">
                     <Image src={project2} alt="project2" layout="responsive" />
+                    <section className="absolute hidden top-[1vw] left-[1vw] flex-row items-start justify-between w-[350px] max-w-xs px-4 py-4 text-left bg-[#8F2D26] text-white shadow-lg md:flex rounded-2xl">
+                        <div>
+                            <div className='flex items-center gap-2 '>
+                                <FaLocationDot size={12} />
+                                <h1 className="text-xs font-bold raleway">Project Location 2</h1>
+                            </div>
+                            <p className="mt-2 text-sm">
+                                Description for Project 2 goes here.
+                            </p>
+                        </div>
+                    </section>
                 </div>
-                <div className="embla__slide rounded-2xl">
+                <div className="relative embla__slide rounded-2xl">
                     <Image src={project3} alt="project3" layout="responsive" />
+                    <section className="absolute hidden top-[1vw] left-[1vw] flex-row items-start justify-between w-[350px] max-w-xs px-4 py-4 text-left bg-[#8F2D26] text-white shadow-lg md:flex rounded-2xl">
+                        <div>
+                            <div className='flex items-center gap-2 '>
+                                <FaLocationDot size={12} />
+                                <h1 className="text-xs font-bold raleway">Project Location 3</h1>
+                            </div>
+                            <p className="mt-2 text-sm">
+                                Description for Project 3 goes here.
+                            </p>
+                        </div>
+                    </section>
                 </div>
             </Carousel>
         </Container>
