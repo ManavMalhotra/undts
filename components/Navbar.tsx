@@ -37,7 +37,7 @@ const Navbar = () => {
     { href: "/about-us", label: "About us" },
   ];
 
-  console.log(path);
+  // console.log(path);
 
   
   return (
