@@ -82,10 +82,10 @@ const FormComponent = ({ showDownload = true }: FormComponentProps) => {
             <div className="flex flex-col gap-4 md:flex-row md:space-x-8">
                 {/* Left Side */}
                 <div className="mb-8 md:w-2/5 md:mb-0">
-                    <h2 className="mb-4 text-2xl md:text-5xl">We are here to help you get started</h2>
+                    <h2 className="mb-8 text-2xl md:text-5xl">We are here to help you get started</h2>
                     {
                         showDownload &&
-                        (<div className='mt-6 mb-12'>
+                        (<div className='mb-12'>
                             <Link href="/" className="flex items-center justify-center w-full gap-4 px-8 py-4 text-lg font-semibold text-[#F4F4F4] bg-black rounded-full">
                                 <h3 className='text-lg md:text-2xl text-nowrap'>
                                     Download Company Profile

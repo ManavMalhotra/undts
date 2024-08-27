@@ -39,15 +39,17 @@ export default function Footer() {
                 <section className='hidden md:block md:col-span-1'></section>
 
                 <section className='flex flex-col justify-between col-span-4 md:col-span-2'>
-                    <h1 className='text-[#B8B8B8] mb-4'>Services</h1>
-                    <ul className="flex flex-col gap-2 ">
-                        <li className="font-semibold">Soil Resistively </li>
-                        <li className="font-semibold">Cathodic Protection</li>
-                        <li className="font-semibold">Pipeline Integrity</li>
-                        <li className="font-semibold">Corrosion Control</li>
-                        <li className="font-semibold">Coating Inspection</li>
-                        <li className="font-semibold">Coating Inspection</li>
-                    </ul>
+                    <div>
+                        <h1 className='text-[#B8B8B8] mb-4'>Services</h1>
+                        <ul className="flex flex-col gap-2 ">
+                            <li className="font-semibold">Soil Resistively </li>
+                            <li className="font-semibold">Cathodic Protection</li>
+                            <li className="font-semibold">Pipeline Integrity</li>
+                            <li className="font-semibold">Corrosion Control</li>
+                            <li className="font-semibold">Coating Inspection</li>
+                            <li className="font-semibold">Coating Inspection</li>
+                        </ul>
+                    </div>
                     <div className='flex gap-2 mt-16'>
                         <h3 className='text-[#B8B8B8] '>Reach out to us :</h3>
                         <p className='text-wrap md:text-nowrap '>info@undts.com</p>
@@ -57,11 +59,11 @@ export default function Footer() {
                 <section className='col-span-4 md:col-span-2'>
                     <h1 className='text-[#B8B8B8] mb-4'>Quick Links</h1>
                     <ul className="flex flex-col gap-2 mt-2">
-                        <li className="font-semibold">Equipments </li>
-                        <li className="font-semibold">About</li>
-                        <li className="font-semibold">Services</li>
-                        <li className="font-semibold">Certifications</li>
-                        <li className="font-semibold">Gallery</li>
+                        <Link href="/services#equipments"> <li className="font-semibold">Equipments</li></Link>
+                        <Link href="/about-us"> <li className="font-semibold">About</li></Link>
+                        <Link href="/services"> <li className="font-semibold">Services</li></Link>
+                        <Link href="/portfolio"> <li className="font-semibold">Certifications</li></Link>
+                        <Link href="/portfolio"> <li className="font-semibold">Gallery</li></Link>
                     </ul>
                 </section>
                 <section className='flex col-span-4 gap-16 md:col-span-8'>
@@ -74,11 +76,13 @@ export default function Footer() {
                     <section className='col-span-4 md:col-span-2'>
                         <h1 className='text-[#B8B8B8] mb-4'>Quick Links</h1>
                         <ul className="flex flex-col gap-2 mt-2">
-                            <li className="font-semibold">Equipments </li>
-                            <li className="font-semibold">About</li>
-                            <li className="font-semibold">Services</li>
-                            <li className="font-semibold">Certifications</li>
-                            <li className="font-semibold">Careers</li>
+
+                            <Link href="/services#equipments"> <li className="font-semibold">Equipments</li></Link>
+                            <Link href="/about-us"> <li className="font-semibold">About</li></Link>
+                            <Link href="/services"> <li className="font-semibold">Services</li></Link>
+                            <Link href="/portfolio"> <li className="font-semibold">Certifications</li></Link>
+                            <Link href="/portfolio"> <li className="font-semibold">Gallery</li></Link>
+
                         </ul>
                     </section>
 

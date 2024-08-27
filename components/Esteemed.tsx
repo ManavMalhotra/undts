@@ -31,7 +31,7 @@ export default function Esteemed() {
     return (
         <Container className="">
             <h1 className="mb-8 text-2xl text-center md:text-4xl" >
-                Our esteemed clients
+                Our Esteemed clients
             </h1>
 
             <div className="mt-16 marquee">

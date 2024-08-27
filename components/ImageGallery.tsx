@@ -84,7 +84,7 @@ export default function ImageGallery({ categories, images }: ImageGalleryProps) 
                         loading ?
                             <SkeletonLoader /> :
                             filteredImages.map((image, index) => (
-                                <a href={image.src} key={index}>
+                                <a href={image.src} data-src={image.src} key={index} className='cursor-pointer'>
                                     <Image
                                         src={image.src}
                                         alt={image.alt}

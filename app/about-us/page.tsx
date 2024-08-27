@@ -36,7 +36,10 @@ function page() {
                             Our team of dedicated professionals leverages advanced technologies and eco-friendly practices to deliver reliable and cost-effective solutions. Whether it's soil resistivity measurements, supplying high-quality materials, or providing precise monitoring and surveying equipment.
                         </p>
                         <p className="text-xl text-black md:text-2xl">
-                            Write to me at: <span className="font-bold">nikhil@undts.com</span>
+                            Write to me at:
+                            <Link href="mailto:nikhil@undts.com">
+                                <span className="ml-4 font-bold">nikhil@undts.com</span>
+                            </Link>
                         </p>
                     </div>
                 </div>

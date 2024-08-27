@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRightArrowLeft } from "react-icons/fa6";
 import { MdArrowRight } from "react-icons/md"
 
 interface ClientCardProps {
@@ -25,9 +27,9 @@ const ClientCard = ({
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugiat expedita neque perferendis. Incidunt sed omnis illo modi, blanditiis itaque.
             </p>
             <div className="md:my-4">
-                <Link href="/project" className="flex items-center text-red-800">
-                    <p>View Projects </p>
-                    <MdArrowRight />
+                <Link href="/project" className="flex gap-4 items-center ">
+                    <p className="font-normal">View Projects </p>
+                    <FaArrowRight />
                 </Link>
             </div>
         </div>
