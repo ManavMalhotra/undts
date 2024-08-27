@@ -129,24 +129,25 @@ function page() {
             <Banner title="Site Survey Equipments" description="We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields." />
 
             <Accordion type="single" collapsible className="w-full bg-[#8F2D26] text-white relative bottom-[20px]">
-                <AccordionItem value="item-1" className='px-12 py-6'>
-                    <AccordionTrigger className='text-2xl md:text-5xl'>Equipments</AccordionTrigger>
-                    <AccordionContent className='py-12'>
+                <AccordionItem value="item-1" className=''>
+                    <AccordionTrigger className='text-2xl py-6 md:text-5xl px-12'>Equipments</AccordionTrigger>
+                    <AccordionContent className='p-12 bg-white'>
                         {
                             equipments.map((equipment, index) => (
-                                <div key={index} className="p-4 rounded-xl  md:bg-white md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] mb-4">
-                                    <h4 className="text-lg font-semibold md:text-2xl">{equipment}</h4>
+                                <div key={index} className="p-4 rounded-xl   md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] mb-4">
+                                    <h4 className="text-lg font-semibold md:text-2xl pb-2">{equipment}</h4>
                                 </div>
                             ))
                         }
                     </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-2" className='px-12 py-6'>
-                    <AccordionTrigger className='text-2xl md:text-5xl'>Survey Equipments</AccordionTrigger>
-                    <AccordionContent className='py-12'>
+                
+                <AccordionItem value="item-2" className=''>
+                    <AccordionTrigger className='text-2xl py-6 md:text-5xl px-12'>Survey Equipments</AccordionTrigger>
+                    <AccordionContent className='p-12 bg-white'>
                         {
                             surveyEquipments.map((equipment, index) => (
-                                <div key={index} className="p-4 rounded-xl  md:bg-white md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] mb-4">
+                                <div key={index} className="p-4 rounded-xl   md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] mb-4">
                                     <h4 className="text-lg font-semibold md:text-2xl">{equipment}</h4>
                                 </div>
                             ))
