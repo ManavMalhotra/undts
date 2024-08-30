@@ -128,10 +128,19 @@ function page() {
 
             <Banner title="Site Survey Equipments" description="We introduce ourselves as one of the reputed construction companies in India having registered office in Bihar and carrying out business in the following hi-tech engineering fields." />
 
-            <Accordion type="single" collapsible className="w-full bg-[#8F2D26] text-white relative bottom-[20px]">
+            <Accordion type="single" collapsible className="w-full bg-[#8F2D26] text-white relative bottom-[20px]"
+            style={{
+                // border-bottom-left-radius: 1rem;
+                // border-bottom-right-radius: 1rem;
+                borderBottomLeftRadius: "1rem",
+                borderBottomRightRadius: "1rem"
+            }}
+            >
                 <AccordionItem value="item-1" className=''>
                     <AccordionTrigger className='text-2xl py-6 md:text-5xl px-12'>Equipments</AccordionTrigger>
-                    <AccordionContent className='p-12 bg-white'>
+                    <AccordionContent className='p-12 bg-white ' style={{
+                        border: "2px solid #8F2D26"
+                    }} >
                         {
                             equipments.map((equipment, index) => (
                                 <div key={index} className="p-4 rounded-xl   md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] mb-4">
@@ -141,10 +150,12 @@ function page() {
                         }
                     </AccordionContent>
                 </AccordionItem>
-                
+
                 <AccordionItem value="item-2" className=''>
                     <AccordionTrigger className='text-2xl py-6 md:text-5xl px-12'>Survey Equipments</AccordionTrigger>
-                    <AccordionContent className='p-12 bg-white'>
+                    <AccordionContent className='p-12 bg-white ' style={{
+                        border: "2px solid #8F2D26"
+                    }} >
                         {
                             surveyEquipments.map((equipment, index) => (
                                 <div key={index} className="p-4 rounded-xl   md:cursor-pointer text-[#8F2D26] bg-[#FFEEED] mb-4">
@@ -155,7 +166,7 @@ function page() {
                     </AccordionContent>
                 </AccordionItem>
             </Accordion>
-        </Container>
+        </Container >
 
     )
 }
