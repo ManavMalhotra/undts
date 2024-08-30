@@ -8,6 +8,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FcSurvey } from "react-icons/fc";
 import { SiJfrogpipelines } from "react-icons/si";
 import { BsTools } from "react-icons/bs";
+import { RiSurveyLine } from "react-icons/ri";
 
 
 
@@ -33,7 +34,7 @@ function OurServices() {
         },
         {
             title: "CIPL Survey Equipment", description: "Our CIPL survey equipment provides comprehensive pipeline integrity assessments.",
-            icon: <IoHelpBuoyOutline className="w-6 h-auto my-2 md:w-8" />
+            icon: <RiSurveyLine className="w-6 h-auto my-2 md:w-8" />
 
         },
         {
