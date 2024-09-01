@@ -48,7 +48,7 @@ const FormComponent = ({ showDownload = true }: FormComponentProps) => {
                     });
                 }
 
-                const action = "https://script.google.com/macros/s/AKfycbx0XnlydMtXtKUpGk5xJgoggmB05I3TePL7yRj_0yaUa3uaO6vlIpbQmx3OaT3d19jb8Q/exec";
+                const action = "https://script.google.com/macros/s/AKfycbyrm09hGYcvFfRisKPuxFZpz7XUu1Qg_ygxVSOSu-RAEWMAt9EU4jEwWEy_TCIukJ2lUg/exec";
 
                 console.log(data);
                 console.log("values", values);
