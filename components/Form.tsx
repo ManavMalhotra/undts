@@ -86,7 +86,9 @@ const FormComponent = ({ showDownload = true }: FormComponentProps) => {
                     {
                         showDownload &&
                         (<div className='mb-12'>
-                            <Link href="/" className="flex items-center justify-center w-full gap-4 px-8 py-4 text-lg font-semibold text-[#F4F4F4] bg-black rounded-full">
+                            <Link href="https://docs.google.com/document/d/1AizMfso_qg3toMHl55Q_ExYSc1Vxytwk/edit?rtpof=true&sd=true"
+                                target='_blank'
+                                className="flex items-center justify-center w-full gap-4 px-8 py-4 text-lg font-semibold text-[#F4F4F4] bg-black rounded-full">
                                 <h3 className='text-lg md:text-2xl text-nowrap'>
                                     Download Company Profile
                                 </h3>
